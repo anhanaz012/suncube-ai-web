@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { DM_Sans,Instrument_Sans } from "next/font/google";
+import { DM_Sans, Instrument_Sans } from "next/font/google";
 import localFont from "next/font/local";
 import "swiper/css/bundle";
 import "@/assets/vendor/effect-slicer.min.css";
@@ -10,13 +10,13 @@ import "bootstrap/scss/bootstrap.scss";
 import "./globals.scss";
 
 const dm_sans = DM_Sans({
-  weight: ["400","500", "600", "700","800"],
+  weight: ["400", "500", "600", "700", "800"],
   subsets: ["latin"],
   variable: "--font_dmsans",
 });
 
 const instrument_sans = Instrument_Sans({
-  weight: ["400","500", "600", "700"],
+  weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
   variable: "--font_instrumentsans",
 });
@@ -73,7 +73,6 @@ const tartuffo = localFont({
   ],
   variable: "--font-tartuffo",
 });
-
 
 const times_now = localFont({
   src: [
@@ -133,7 +132,8 @@ const Sequel_sans_medium = localFont({
 
 export const metadata: Metadata = {
   title: "Suncube AI - Solar Energy Management",
-  description: "Redox is a creative agency and portfolio template built with Next.js, designed to showcase your work and services effectively.",
+  description:
+    "Suncube is an AI-powered solar intelligence platform helping enterprises monitor, predict, and optimize their energy generation — transforming sunlight into smarter profits.",
 };
 
 export default function RootLayout({
@@ -143,7 +143,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${dm_sans.variable} ${instrument_sans.variable} ${bdogrotesk.variable} ${tartuffo.variable} ${tartufffo_trial.variable} ${times_now.variable} ${thunder.variable} ${Sequel_sans_roman.variable} ${Sequel_sans_medium.variable}`}>
+      <body
+        className={`${dm_sans.variable} ${instrument_sans.variable} ${bdogrotesk.variable} ${tartuffo.variable} ${tartufffo_trial.variable} ${times_now.variable} ${thunder.variable} ${Sequel_sans_roman.variable} ${Sequel_sans_medium.variable}`}
+      >
         {children}
       </body>
     </html>
