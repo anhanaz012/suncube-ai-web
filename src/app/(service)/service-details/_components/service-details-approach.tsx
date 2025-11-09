@@ -1,4 +1,3 @@
-
 interface ApproachItem {
   number: string;
   title: string;
@@ -8,23 +7,23 @@ interface ApproachItem {
 const approachItems: ApproachItem[] = [
   {
     number: "01",
-    title: "Discovery & Research",
-    text: "Our mission is to empower the brands we believe in with tailor-made approaches that ignite creativity and growth without limits.",
+    title: "Assessment & Planning",
+    text: "We analyze your energy needs and site potential to design a solar solution tailored for your home or business.",
   },
   {
     number: "02",
-    title: "Wireframing & Prototyping",
-    text: "Our mission is to empower the brands we believe in with tailor-made approaches that ignite creativity and growth without limits.",
+    title: "Solar Panel Installation",
+    text: "Expert installation of high-efficiency solar panels, ensuring maximum energy capture and minimal disruption.",
   },
   {
     number: "03",
-    title: "Design System",
-    text: "Our mission is to empower the brands we believe in with tailor-made approaches that ignite creativity and growth without limits.",
+    title: "AI Energy Optimization",
+    text: "Integrating smart energy management systems that monitor, predict, and optimize usage for efficiency and cost savings.",
   },
   {
     number: "04",
-    title: "Design Validation",
-    text: "Our mission is to empower the brands we believe in with tailor-made approaches that ignite creativity and growth without limits.",
+    title: "Monitoring & Support",
+    text: "Continuous monitoring and maintenance to ensure your solar system performs at its best year-round.",
   },
 ];
 
@@ -37,14 +36,13 @@ const ServiceDetailsApproach = () => {
             <div className="section-title-wrapper">
               <div className="subtitle-wrapper fade-anim" data-direction="left">
                 <span className="section-subtitle">
-                  Our comprehensive <br />
-                  design process
+                  Our step-by-step <br />
+                  solar implementation process
                 </span>
               </div>
               <div className="title-wrapper fade-anim" data-direction="right">
                 <h2 className="section-title font-sequelsans-romanbody">
-                  Whether you’re a startup or industry star, we’re here to promote
-                  your brand by creative research and real human centred design.
+                  From initial assessment to full AI-optimized energy management, we guide you at every step toward smarter, greener energy.
                 </h2>
               </div>
             </div>

@@ -3,37 +3,37 @@ import React from "react";
 
 const testimonials = [
   {
-    text: `“They took the time to understand my brand and target audience, and developed a marketing strategy that perfectly captured our essence. Their creative campaigns led to a significant increase in sales, and their expertise helped us secure a valuable partnership with another company`,
-    name: "Michael Mahanay",
-    post: "CMO, Supra",
+    text: `“Switching to Solar System’s smart energy solutions dramatically reduced our electricity bills. The AI optimization ensures we use every kilowatt efficiently, and the team guided us at every step.”`,
+    name: "Emily Rogers",
+    post: "Homeowner, Greenfield",
     icon: "/assets/imgs/icon/icon-3.webp",
     light: false,
   },
   {
-    text: `Their mission is to empower the brands we believe in with tailor-made approaches that ignite creativity and growth without limits. We discovered more funny quality work.`,
-    name: "James David",
-    post: "Lead Developer, Dexra",
+    text: `“Our company transitioned to renewable energy seamlessly. The installation was fast, the monitoring system keeps everything optimized, and we’re proud to cut down on carbon emissions.”`,
+    name: "David Thompson",
+    post: "Operations Manager, EcoTech Inc.",
     icon: "/assets/imgs/icon/icon-3-light.webp",
     light: true,
   },
   {
-    text: `Redox always eager to collaborate with forward-thinking individuals and organizations, using the power of design and technology to tackle today’s challenges and shape a better future from sleek websites to memorable branding, I offer creative solutions that connect, engage, and drive results`,
-    name: "Brenda C. Janet",
-    post: "Lead Designer, Fexzo",
+    text: `“The team’s expertise in solar technology and AI energy management transformed our facility. Energy costs are down, efficiency is up, and the environmental impact is incredible.”`,
+    name: "Sophia Martinez",
+    post: "Facility Director, SunPower Solutions",
     icon: "/assets/imgs/icon/icon-3.webp",
     light: false,
   },
   {
-    text: `Design is a team effort, and I believe in a true partnership. By working closely with you, understanding your vision, and staying open to feedback. We can create something that truly resonates.`,
-    name: "Martin Carlos",
-    post: "CEO & Founder, Dulex",
+    text: `“I never thought switching to solar could be this simple. The Solar System team handled everything from assessment to installation, and the ongoing support is top-notch.”`,
+    name: "Michael Chen",
+    post: "Entrepreneur, Bright Future Co.",
     icon: "/assets/imgs/icon/icon-3-light.webp",
     light: true,
   },
   {
-    text: `“They took the time to understand my brand and target audience, and developed a marketing strategy that perfectly captured our essence. Their creative campaigns led to a significant increase in sales, and their expertise helped us secure a valuable partnership with another company`,
-    name: "Garry J. Coburn",
-    post: "Project Manager, Camos",
+    text: `“Our community project now runs entirely on clean solar energy. The AI-powered monitoring system gives us full control and ensures sustainability for years to come.”`,
+    name: "Olivia Patel",
+    post: "Project Lead, Solar Village Initiative",
     icon: "/assets/imgs/icon/icon-3.webp",
     light: false,
   },
@@ -48,7 +48,7 @@ export default function TestimonialArea() {
             <div className="section-title-wrapper">
               <div className="title-wrapper">
                 <h2 className="section-title font-sequelsans-romanbody rr_title_anim">
-                  Our happy clients always say, how they are satisfied with our service.
+                  What our clients say about switching to smarter, greener energy.
                 </h2>
               </div>
             </div>

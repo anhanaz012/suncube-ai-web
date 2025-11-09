@@ -1,33 +1,58 @@
 import Image from "next/image";
 import Link from "next/link";
-import gallery_1 from '@/assets/imgs/gallery/image-10.webp';
-import gallery_2 from '@/assets/imgs/gallery/image-11.webp';
+import gallery_1 from "@/assets/imgs/gallery/image-10.webp";
+import gallery_2 from "@/assets/imgs/gallery/image-11.webp";
 
 const services = [
   {
     number: "001",
-    title: <>Art <br />Direction</>,
-    text: "Our aim is to nurture brands and help them grow. And just like human brands need to grow.",
+    title: (
+      <>
+        Solar <br />
+        Energy Solutions
+      </>
+    ),
+    text: "Designing and deploying solar systems tailored for homes and businesses, maximizing efficiency while reducing your carbon footprint.",
   },
   {
     number: "002",
-    title: <>Interaction <br />Design</>,
-    text: "Whether your inquiries are big or small, we're prepared to engage, focusing on complex problems",
+    title: (
+      <>
+        Smart <br />
+        Energy Management
+      </>
+    ),
+    text: "Harnessing AI to monitor, predict, and optimize energy usage so your systems work smarter and cost less.",
   },
   {
     number: "003",
-    title: <>Web &amp; Mobile <br />Development</>,
-    text: "Every opportunity comes with unique factors are the main stream we can offer your brand.",
+    title: (
+      <>
+        Battery & <br />
+        Storage Systems
+      </>
+    ),
+    text: "Integrating advanced energy storage to ensure power availability even when the sun isn’t shining.",
   },
   {
     number: "004",
-    title: <>Digital <br />Marketing</>,
-    text: "We offer digital marketing that connect, engage, and drive results. Let’s turn your vision into reality.",
+    title: (
+      <>
+        Sustainable <br />
+        Consulting
+      </>
+    ),
+    text: "Providing expert guidance on clean energy adoption, helping businesses and households transition to greener solutions.",
   },
   {
     number: "005",
-    title: <>Brand <br />Guideline</>,
-    text: "We always eager to collaborate with forward-thinking individuals and the organizations",
+    title: (
+      <>
+        Maintenance & <br />
+        Support
+      </>
+    ),
+    text: "Continuous monitoring and servicing to keep your solar systems performing at their best, year after year.",
   },
 ];
 
@@ -39,7 +64,11 @@ export default function ServiceAreaTwo() {
           <div className="container large">
             <div className="services-wrapper-2">
               {services.map((service) => (
-                <Link className="fade-anim" href="/service-details" key={service.number}>
+                <Link
+                  className="fade-anim"
+                  href="/service-details"
+                  key={service.number}
+                >
                   <div className="service-box-wrapper">
                     <div className="service-box">
                       <div className="number">{service.number}</div>
@@ -56,18 +85,30 @@ export default function ServiceAreaTwo() {
       <div className="service-content-wrapper section-spacing-top">
         <div className="container large">
           <div className="service-content">
-            <div className="section-info-wrapper fade-anim" data-direction="left">
+            <div
+              className="section-info-wrapper fade-anim"
+              data-direction="left"
+            >
               <div className="thumb parallax-view">
-                <Image src={gallery_1} alt="image" data-speed="0.7" style={{height:"auto"}} />
+                <Image
+                  src={gallery_1}
+                  alt="image"
+                  data-speed="0.7"
+                  style={{ height: "auto" }}
+                />
               </div>
               <div className="text-wrapper">
                 <p className="text text-invert">
-                  A practical guide explaining how and why Redox should be part of every project to ensure its high quality and seamless user experience.
+                  A practical guide on how intelligent solar energy systems can
+                  transform any home or project, ensuring efficiency,
+                  sustainability, and seamless integration.
                 </p>
                 <p className="text text-invert">
-                  If you already understand ask to continue scrolling; otherwise, click the link below to explore more.
+                  If you’re ready to embrace smart energy solutions, continue
+                  scrolling; otherwise, click the link below to learn more.
                 </p>
               </div>
+
               <div className="btn-wrapper">
                 <Link href="/portfolio" className="rr-btn btn-border-white">
                   <span className="btn-wrap">
@@ -77,9 +118,18 @@ export default function ServiceAreaTwo() {
                 </Link>
               </div>
             </div>
-            <div className="section-thumb-wrapper fade-anim" data-delay="0.45" data-direction="right">
+            <div
+              className="section-thumb-wrapper fade-anim"
+              data-delay="0.45"
+              data-direction="right"
+            >
               <div className="thumb parallax-view">
-                <Image src={gallery_2} alt="image" data-speed="0.6" style={{height:"auto"}} />
+                <Image
+                  src={gallery_2}
+                  alt="image"
+                  data-speed="0.6"
+                  style={{ height: "auto" }}
+                />
               </div>
             </div>
           </div>

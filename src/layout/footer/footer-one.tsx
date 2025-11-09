@@ -31,15 +31,15 @@ const Footer: React.FC = () => {
           <div className="info-text">
             <div className="text-wrapper">
               <p className="text">
-                Redox is a startup digital agency of design, development and
-                marketing that works friendly with global client
+                Suncube AI provides intelligent, AI-powered solar energy solutions to power homes, businesses, and communities sustainably.
               </p>
             </div>
             <div className="info-link">
-              <a href="mailto:info@redox.com">info@redox.com</a>
+              <a href="mailto:info@solarsystem.com">info@suncubeai.com</a>
             </div>
           </div>
         </div>
+
         <div className="footer-widget-wrapper-box">
           <div className="footer-widget-wrapper">
             <div className="footer-widget-box newsletter">
@@ -63,16 +63,17 @@ const Footer: React.FC = () => {
               <div className="subscription-text">
                 <div className="text-wrapper">
                   <p className="text">
-                    By subscribing you agree with our
-                    <Link href="/contact">Privacy Policy</Link>
+                    By subscribing you agree with our{" "}
+                    <Link href="/privacy-policy">Privacy Policy</Link>
                   </p>
                 </div>
               </div>
             </div>
+
             <div className="footer-widget-box">
               <h2 className="title">Company</h2>
               <ul className="footer-nav-list">
-                {["agency", "Solutions", "Community", "Work", "Contact"].map(
+                {["About Us", "Solutions", "Community", "Projects", "Contact"].map(
                   (item) => (
                     <li key={item}>
                       <Link href="/contact">{item}</Link>
@@ -81,16 +82,17 @@ const Footer: React.FC = () => {
                 )}
               </ul>
             </div>
+
             <div className="footer-widget-box">
               <h2 className="title">Social</h2>
               <ul className="footer-nav-list">
                 {[
                   "Facebook",
                   "Twitter",
-                  "Dribbble",
+                  "LinkedIn",
                   "Instagram",
-                  "Awwwards",
                   "YouTube",
+                  "Medium",
                 ].map((item) => (
                   <li key={item}>
                     <Link href="/contact">{item}</Link>
@@ -98,10 +100,11 @@ const Footer: React.FC = () => {
                 ))}
               </ul>
             </div>
+
             <div className="footer-widget-box">
               <h2 className="title">Office</h2>
               <ul className="footer-nav-list">
-                {["New York", "Toronto", "Berlin", "London"].map((item) => (
+                {["San Francisco", "Toronto", "Berlin", "London"].map((item) => (
                   <li key={item}>
                     <Link href="/contact">{item}</Link>
                   </li>
@@ -111,13 +114,13 @@ const Footer: React.FC = () => {
           </div>
         </div>
       </div>
+
       <div className="copyright-area">
         <div className="copyright-area-inner">
           <div className="copyright-text">
             <p className="text">
               © {new Date().getFullYear()}{" "}
-              <a href="https://themeforest.net/user/ravextheme">RavexTheme.</a>{" "}
-              All right reserved
+              <a href="https://solarsystem.com">Suncube AI</a>. All rights reserved.
             </p>
           </div>
         </div>
