@@ -11,6 +11,9 @@ import VideoBox from "@/components/video/video-box";
 import MainWrapper from "@/components/wrapper/main-wrapper";
 import Header from "@/layout/header/header-one";
 import DigitalAgencyWrapper from "./_components/digital-agency-wrapper";
+import CtaAreaThree from "@/components/cta/cta-area-3";
+import CtaArea from "@/components/cta/cta-area";
+import Footer from "@/layout/footer/footer-one";
 
 export default function HomePage() {
   return (
@@ -36,6 +39,8 @@ export default function HomePage() {
             <ServiceDetailsApproach />
             <TestimonialArea />
             <ProductivityArea />
+            <CtaArea />
+            <Footer/>
           </main>
         </DigitalAgencyWrapper>
       </MainWrapper>
