@@ -2,7 +2,7 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import Image from "next/image";
-import logo from "@/assets/imgs/logo/logo01.png";
+import logo from "@/assets/imgs/logo/logo02.png";
 import icon from "@/assets/imgs/icon/icon-1.webp";
 
 const Footer: React.FC = () => {
@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
               <Image
                 src={logo}
                 alt="site-logo"
-                style={{ height: "auto",maxHeight:'150px',objectFit:'contain' }}
+                style={{ height: "auto",objectFit:'contain' }}
               />
             </Link>
           </div>
