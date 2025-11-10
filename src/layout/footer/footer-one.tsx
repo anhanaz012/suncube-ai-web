@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
               <Image
                 src={logo}
                 alt="site-logo"
-                style={{ height: "auto",maxHeight:'120px',objectFit:'cover' }}
+                style={{ height: "auto",maxHeight:'150px',objectFit:'contain' }}
               />
             </Link>
           </div>
