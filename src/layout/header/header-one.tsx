@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import logo from '@/assets/imgs/logo/logo-light.png';
+import logo from '@/assets/imgs/logo/logo01.png';
 import MainMenu from './main-menu';
 import SideToggle from '@/components/common/side-toggle';
 
@@ -16,11 +16,19 @@ const Header = () => {
         <div className="container large">
           <div className="header-area__inner">
             {/* Logo */}
-            <div className="header__logo">
+            <div className="header__logo" style={{
+               border:'none !important'
+            }}>
               <Link href="/index">
                 <Image
                   src={logo}
                   className="normal-logo"
+                  style={{
+                    height:"120px",
+                    width:"120px",
+                    objectFit:'cover',
+                    border:'none !important'
+                  }}
                   alt="Site Logo"
                   width={95}
                   height={23}

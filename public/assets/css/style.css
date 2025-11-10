@@ -16553,6 +16553,10 @@ video.video-area {
 .dark .header-area-2 .header__logo .dark-logo {
   display: block;
 }
+.header-logo{
+  height:80px;
+  width:80px
+}
 .header-area-2 .header__logo img {
   max-width: 120px;
 }

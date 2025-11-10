@@ -7,11 +7,10 @@ export default function ProductivityArea() {
             <div className="section-title-wrapper">
               <div className="title-wrapper">
                 <h2 className="section-title font-instrument sans-medium word-anim">
-                  It’s all about <br />
-                  <span className="shape-1">the intelligent design</span>, 
-                  <span className="shape-2">with AI precision</span>, and 
-                  {/* <span className="shape-3">sustainability</span>—delivering clean, efficient solutions  */}
-                  <br />innovation for smarter energy in simple way.
+                  It’s all about the intelligent design with <br />
+                  <span className="shape-1">AI precision</span>, and{" "}
+                  <span className="shape-2">innovation</span> <br />
+                  for smarter energy in simple ways
                 </h2>
               </div>
             </div>
@@ -19,5 +18,5 @@ export default function ProductivityArea() {
         </div>
       </div>
     </section>
-  )
+  );
 }
