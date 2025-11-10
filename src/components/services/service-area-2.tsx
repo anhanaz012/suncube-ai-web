@@ -83,7 +83,7 @@ export default function ServiceAreaTwo() {
                   src={gallery_1}
                   alt="image"
                   data-speed="0.7"
-                  style={{ height: "auto" }}
+                  style={{ height: "auto",minHeight:"250px" }}
                 />
               </div>
               <div className="text-wrapper">
@@ -117,7 +117,7 @@ export default function ServiceAreaTwo() {
                   src={gallery_2}
                   alt="image"
                   data-speed="0.6"
-                  style={{ height: "auto" }}
+                  style={{ height: "auto",maxHeight:"600px" }}
                 />
               </div>
             </div>
