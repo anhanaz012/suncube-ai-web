@@ -1,61 +1,50 @@
 import Image from "next/image";
 import Link from "next/link";
-import gallery_1 from "@/assets/imgs/gallery/image-10.webp";
-import gallery_2 from "@/assets/imgs/gallery/image-11.webp";
+import gallery_1 from "@/assets/imgs/gallery/img1.jpeg";
+import gallery_2 from "@/assets/imgs/gallery/img2.jpeg";
 
 const services = [
   {
     number: "001",
     title: (
       <>
-        Solar <br />
-        Energy Solutions
+        AI Powered <br />
+        Solutions
       </>
     ),
-    text: "Designing and deploying solar systems tailored for homes and businesses, maximizing efficiency while reducing your carbon footprint.",
+    text: "At Suncube AI, every ray of sunlight is analyzed, predicted, and optimized in real time. Our proprietary machine-learning algorithms study performance patterns, forecast yield fluctuations, and auto-adjust system parameters to ensure peak output. The result — consistently higher energy production, lower losses, and a system that learns, adapts, and outperforms itself every single day",
   },
   {
     number: "002",
     title: (
       <>
-        Smart <br />
-        Energy Management
+        Blockchain <br />
+        Security
       </>
     ),
-    text: "Harnessing AI to monitor, predict, and optimize energy usage so your systems work smarter and cost less.",
+    text: "We bring transparency and traceability to clean energy. Each energy transaction, data point, and performance record is logged on an immutable blockchain ledger. This ensures total data integrity, eliminates tampering, and enables verifiable sustainability reporting. With Suncube’s blockchain-backed records, your energy becomes not just green — but genuinely trustworthy.",
   },
   {
     number: "003",
     title: (
       <>
-        Battery & <br />
-        Storage Systems
+        Predictive <br />
+        Maintenance
       </>
     ),
-    text: "Integrating advanced energy storage to ensure power availability even when the sun isn’t shining.",
+    text: "Our AI doesn’t just monitor — it predicts. Using real-time sensor data and historical trends, Suncube’s predictive maintenance engine identifies potential issues before they affect system performance. Get proactive alerts, actionable insights, and automated maintenance schedules — maximizing uptime, reducing costs, and extending the lifespan of your assets without ever lifting a finger.",
   },
   {
     number: "004",
     title: (
       <>
-        Sustainable <br />
-        Consulting
+        Carbon Footprint <br />
+        Tracking
       </>
     ),
-    text: "Providing expert guidance on clean energy adoption, helping businesses and households transition to greener solutions.",
-  },
-  {
-    number: "005",
-    title: (
-      <>
-        Maintenance & <br />
-        Support
-      </>
-    ),
-    text: "Continuous monitoring and servicing to keep your solar systems performing at their best, year after year.",
+    text: "Track your sustainability progress with live CO₂ offset analytics. Our intelligent dashboards quantify exactly how much carbon your solar systems are saving and translate that into measurable environmental impact. Whether you’re a homeowner or a global enterprise, Suncube helps you visualize your green contribution — making every kilowatt count toward a cleaner future.",
   },
 ];
-
 export default function ServiceAreaTwo() {
   return (
     <section className="service-area-2">

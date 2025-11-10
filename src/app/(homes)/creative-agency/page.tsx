@@ -15,7 +15,7 @@ import TeamArea from "@/components/team/team-area";
 import CtaAreaTwo from "@/components/cta/cta-area-2";
 import FooterTwo from "@/layout/footer/footer-two";
 import shape from "@/assets/imgs/shape/shape-9.webp";
-import shape_2 from "@/assets/imgs/shape/shape-8.svg";
+import shape_2 from "@/assets/imgs/shape/shape-09.svg";
 import CustomCursor from "@/components/common/custom-cursor";
 
 export const metadata: Metadata = {

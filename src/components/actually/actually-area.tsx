@@ -5,9 +5,8 @@ export default function ActuallyArea() {
         <div className="container">
           <div className="bg-area"></div>
           <h2 className="section-title font-sequelsans-romanbody t_line">
-            What services <br />
-            we provide you <br />
-            actually
+            Why Choose <br />
+            Suncube AI
           </h2>
         </div>
       </div>

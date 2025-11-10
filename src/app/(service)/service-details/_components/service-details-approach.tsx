@@ -7,23 +7,23 @@ interface ApproachItem {
 const approachItems: ApproachItem[] = [
   {
     number: "01",
-    title: "Assessment & Planning",
-    text: "We analyze your energy needs and site potential to design a solar solution tailored for your home or business.",
+    title: "Site Intelligence & Feasibility ",
+    text: "We begin by digitally mapping your location using AI-based satellite assessment tools. This allows us to calculate sunlight potential, roof geometry, and optimal installation angles — ensuring your system is built on data, not assumptions. ",
   },
   {
     number: "02",
-    title: "Solar Panel Installation",
-    text: "Expert installation of high-efficiency solar panels, ensuring maximum energy capture and minimal disruption.",
+    title: " Design & Simulation",
+    text: "Our engineers model your system in 3D and run performance simulations under different weather, load, and usage conditions. This predictive modeling guarantees efficiency before a single panel is installed.",
   },
   {
     number: "03",
-    title: "AI Energy Optimization",
-    text: "Integrating smart energy management systems that monitor, predict, and optimize usage for efficiency and cost savings.",
+    title: "Installation & Grid Sync",
+    text: "High-efficiency solar panels and smart inverters are installed with precision alignment and seamless grid synchronization — minimizing downtime and maximizing immediate energy generation. ",
   },
   {
     number: "04",
-    title: "Monitoring & Support",
-    text: "Continuous monitoring and maintenance to ensure your solar system performs at its best year-round.",
+    title: "Performance Intelligence & Upgrades ",
+    text: "Once live, your system enters Suncube’s AI monitoring network — continuously learning, adapting, and optimizing output. Performance reports and upgrade recommendations are delivered automatically to keep you at peak efficiency year-round.",
   },
 ];
 
@@ -36,13 +36,17 @@ const ServiceDetailsApproach = () => {
             <div className="section-title-wrapper">
               <div className="subtitle-wrapper fade-anim" data-direction="left">
                 <span className="section-subtitle">
-                  Our step-by-step <br />
-                  solar implementation process
+                  Engineered Precision. <br />
+                  Powered by Intelligence.
                 </span>
               </div>
               <div className="title-wrapper fade-anim" data-direction="right">
                 <h2 className="section-title font-sequelsans-romanbody">
-                  From initial assessment to full AI-optimized energy management, we guide you at every step toward smarter, greener energy.
+                  Every project we deliver follows a clear, data-driven process
+                  — designed to combine solar craftsmanship with the predictive
+                  intelligence of AI. From concept to continuous performance,
+                  Suncube AI ensures that every watt works harder, smarter, and
+                  cleaner.
                 </h2>
               </div>
             </div>

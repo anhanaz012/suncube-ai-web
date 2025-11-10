@@ -6,12 +6,12 @@ export default function ProductivityArea() {
           <div className="section-content">
             <div className="section-title-wrapper">
               <div className="title-wrapper">
-                <h2 className="section-title font-instrumentsans-medium word-anim">
+                <h2 className="section-title font-instrument sans-medium word-anim">
                   It’s all about <br />
-                  <span className="shape-1">smart energy</span>, 
-                  <span className="shape-2">innovation</span>, and 
-                  <span className="shape-3">sustainability</span>—delivering clean, efficient solutions 
-                  <br />that make renewable energy simple and effective
+                  <span className="shape-1">the intelligent design</span>, 
+                  <span className="shape-2">with AI precision</span>, and 
+                  {/* <span className="shape-3">sustainability</span>—delivering clean, efficient solutions  */}
+                  <br />innovation for smarter energy in simple way.
                 </h2>
               </div>
             </div>

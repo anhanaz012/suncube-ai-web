@@ -17,13 +17,28 @@ export default function HeroOne() {
             >
               <div className="circle-text-wrapper">
                 <div className="circle-text">
-                  <Image src={shape_3} alt="image" className="text" />
-                  <h1>S</h1>
-                  {/* <Image
-                    src={shape_2}
-                    alt="image"
-                    className="icon"
-                  /> */}
+                  <h1 className="logo-letter">S</h1>
+                  <div className="circle text">
+                    <svg viewBox="0 0 100 100">
+                      <defs>
+                        <path
+                          id="circlePath"
+                          d="M50,50 m-35,0 a35,35 0 1,1 70,0 a35,35 0 1,1 -70,0"
+                        />
+                      </defs>
+                      <text
+                        className="circle-text"
+                        style={{fill:"white !important"}}
+                        font-size="9"
+                        letter-spacing="1.1"
+                      >
+                        <textPath href="#circlePath">
+                         SUNCUBE AI • SUNCUBE AI • SUNCUBE AI •
+                        </textPath>
+                      </text>
+                    </svg>
+                  </div>
+
                 </div>
               </div>
             </div>

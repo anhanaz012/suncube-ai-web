@@ -110,8 +110,8 @@ export default function SideToggle({ isOpen, onSideToggle }: IProps) {
                     <i className="fa-solid fa-envelope"></i>
                   </span>
                   <span className="text">
-                    <a href="mailto:hello@redoxagency.com">
-                      hello@redoxagency.com
+                    <a href="mailto:info@suncube.ai">
+                      info@suncube.ai
                     </a>
                   </span>
                 </div>

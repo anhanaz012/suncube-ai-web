@@ -3864,6 +3864,29 @@ section {
     max-width: 600px;
   }
 }
+.circle {
+  width: 130px;
+  height: 130px;
+  font-size: 20px;
+  animation: spin 10s linear infinite;
+}
+.circle svg {
+  width: 100%;
+  height: 100%;
+}
+
+.circle-text {
+  fill: #fff; /* 👈 makes the text white */
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .hero-area .big-text {
   font-family: var(--font_thunder);
   font-size: 550px;

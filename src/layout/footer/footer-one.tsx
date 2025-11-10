@@ -48,7 +48,7 @@ const Footer: React.FC = () => {
                   <input
                     type="email"
                     value={email}
-                    onChange={(e) => setEmail(e.target.value)}
+                    onChange={(e) => setEmail(e.target.value)}  
                     placeholder="Enter your email"
                   />
                   <button
@@ -71,9 +71,9 @@ const Footer: React.FC = () => {
             </div>
 
             <div className="footer-widget-box">
-              <h2 className="title">Company</h2>
+              <h2 className="title">Suncube</h2>
               <ul className="footer-nav-list">
-                {["About Us", "Solutions", "Community", "Projects", "Contact"].map(
+                {["About", "Sustainability", "Partners", "Contact"].map(
                   (item) => (
                     <li key={item}>
                       <Link href="/contact">{item}</Link>
@@ -84,15 +84,13 @@ const Footer: React.FC = () => {
             </div>
 
             <div className="footer-widget-box">
-              <h2 className="title">Social</h2>
+              <h2 className="title">Solutions</h2>
               <ul className="footer-nav-list">
                 {[
-                  "Facebook",
-                  "Twitter",
-                  "LinkedIn",
-                  "Instagram",
-                  "YouTube",
-                  "Medium",
+                  "Residential Solar + AI",
+                  "Smart Grid & Virtual Power Plant",
+                  "AI Monitoring & Predictive Maintenance",
+                  "Data Insights & Weather Forecasting",
                 ].map((item) => (
                   <li key={item}>
                     <Link href="/contact">{item}</Link>
@@ -102,9 +100,9 @@ const Footer: React.FC = () => {
             </div>
 
             <div className="footer-widget-box">
-              <h2 className="title">Office</h2>
+              <h2 className="title">Resources</h2>
               <ul className="footer-nav-list">
-                {["San Francisco", "Toronto", "Berlin", "London"].map((item) => (
+                {["Case Studies", "Blog", "Our Commitment", "Transparency"].map((item) => (
                   <li key={item}>
                     <Link href="/contact">{item}</Link>
                   </li>
