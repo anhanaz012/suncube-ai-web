@@ -3,7 +3,7 @@ import Link from "next/link";
 const services = [
   {
     img: "/assets/imgs/gallery/image-13.webp",
-    title: "Smart Installatio",
+    title: "Smart Installation",
     text: "AI-assisted panel placement and grid integration for maximum energy capture, efficiency, and system stability — all installed with precision and minimal disruption. ",
     delay: "0.45",
   },
