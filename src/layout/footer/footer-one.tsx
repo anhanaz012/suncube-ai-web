@@ -76,7 +76,7 @@ const Footer: React.FC = () => {
                 {["About", "Sustainability", "Partners", "Contact"].map(
                   (item) => (
                     <li key={item}>
-                      <Link href="/contact">{item}</Link>
+                      <Link href="/contact-suncube">{item}</Link>
                     </li>
                   )
                 )}
@@ -93,7 +93,7 @@ const Footer: React.FC = () => {
                   "Data Insights & Weather Forecasting",
                 ].map((item) => (
                   <li key={item}>
-                    <Link href="/contact">{item}</Link>
+                    <Link href="/contact-suncube">{item}</Link>
                   </li>
                 ))}
               </ul>
@@ -104,7 +104,7 @@ const Footer: React.FC = () => {
               <ul className="footer-nav-list">
                 {["Case Studies", "Blog", "Our Commitment", "Transparency"].map((item) => (
                   <li key={item}>
-                    <Link href="/contact">{item}</Link>
+                    <Link href="/contact-suncube">{item}</Link>
                   </li>
                 ))}
               </ul>

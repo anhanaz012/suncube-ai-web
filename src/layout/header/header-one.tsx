@@ -43,7 +43,7 @@ const Header = () => {
 
             {/* Button */}
             <div className="header__button">
-              <a href="/contact" className="rr-btn hover-bg-theme">
+              <a href="/portal-login" className="rr-btn hover-bg-theme">
                 <span className="btn-wrap">
                   <span className="text-one">Portal Login</span>
                   <span className="text-two">Portal Login</span>

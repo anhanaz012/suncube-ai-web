@@ -52,9 +52,9 @@ const menuData: MenuItem[] = [
     title: "More",
     href: "#",
     children: [
-      { title: "About", href: "/about" },
-      { title: "Blog", href: "/blog" },
-      { title: "Contact", href: "/contact" },
+      { title: "About", href: "/about-suncube-ai" },
+      { title: "Blog", href: "/suncube-ai-blog" },
+      { title: "Contact", href: "/contact-suncube-ai" },
       { title: "Our Commitment", href: "/our-commitment" },
     ],
   },

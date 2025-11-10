@@ -28,7 +28,7 @@ export default function AboutOne() {
             </div>
             <div className="btn-wrapper ">
               <Link
-                href="/contact"
+                href="/learn-about-us"
                 className="rr-btn  btn-text-fli hover-bg-theme"
               >
                 <span className="btn-wrap">

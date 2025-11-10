@@ -55,7 +55,7 @@ export default function ServiceAreaTwo() {
               {services.map((service) => (
                 <Link
                   className="fade-anim"
-                  href="/service-details"
+                  href="/service-suncube"
                   key={service.number}
                 >
                   <div className="service-box-wrapper">
@@ -99,7 +99,7 @@ export default function ServiceAreaTwo() {
               </div>
 
               <div className="btn-wrapper">
-                <Link href="/portfolio" className="rr-btn btn-border-white">
+                <Link href="/suncube-work" className="rr-btn btn-border-white">
                   <span className="btn-wrap">
                     <span className="text-one">View All Work</span>
                     <span className="text-two">View All Work</span>

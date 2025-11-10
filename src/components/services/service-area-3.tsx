@@ -37,16 +37,16 @@ export const ServiceThreeWrapperArea = () => {
           key={idx}
         >
           <div className="thumb">
-            <Link href="/service-details">
+            <Link href="/suncube-service-details">
               <Image src={service.img} alt="image" width={110} height={110} />
             </Link>
           </div>
           <div className="content">
             <h3 className="title">
-              <Link href="/service-details">{service.title}</Link>
+              <Link href="/suncube-service-details">{service.title}</Link>
             </h3>
             <p className="text">{service.text}</p>
-            <Link href="/service-details" className="rr-btn-underline">
+            <Link href="/suncube-service-details" className="rr-btn-underline">
               Explore
             </Link>
           </div>
@@ -68,7 +68,7 @@ export default function ServiceAreaThree() {
                   Planned. Installed. <br />
                   Optimized. Perfected.{" "}
                   <span className="mb-14">
-                    <Link href="/services" className="rr-btn-group">
+                    <Link href="/suncube-services" className="rr-btn-group">
                       <span className="b">Discover more</span>
                       <span className="c">
                         <i className="fa-solid fa-arrow-right"></i>
