@@ -1,7 +1,5 @@
-import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import ServiceContentWrapper from "./service-content-wrapper";
 
 export default function ServiceAreaSix() {
   return (
@@ -12,11 +10,11 @@ export default function ServiceAreaSix() {
           <div className="section-header fade-anim">
             <div className="section-title-wrapper">
               <div className="subtitle-wrapper">
-                <span className="section-subtitle">Capabilities</span>
+                <span className="section-subtitle">Technology</span>
               </div>
               <div className="title-wrapper">
                 <h2 className="section-title font-sequelsans-romanbody">
-                  We think out of the box when it comes to creative
+                  Powered by Advanced Technology
                 </h2>
               </div>
             </div>
@@ -28,51 +26,27 @@ export default function ServiceAreaSix() {
               {[
                 {
                   number: "(01)",
-                  title: "Branding",
+                  title: "Artificial Intelligence",
                   services: [
-                    "Creative Direction",
-                    "Brand Identity",
-                    "Branding Strategy",
-                    "Graphic Design",
-                    "Startup",
+                    "Machine learning algorithms optimize energy production, predict maintenance needs, and automate grid interactions. ",
                   ],
-                  img: "/assets/imgs/gallery/image-3.webp",
+                  img: "/assets/imgs/solutions/img1.png",
                 },
                 {
                   number: "(02)",
-                  title: "UI-UX Design",
+                  title: "Blockchain Security ",
                   services: [
-                    "UI UX Consulting",
-                    "UX Research",
-                    "Usability Testing",
-                    "Wireframing",
-                    "Prototyping",
+                    "Secure, transparent energy transactions with immutable records and smart contract automation.",
                   ],
-                  img: "/assets/imgs/gallery/image-4.webp",
+                  img: "/assets/imgs/solutions/image.png",
                 },
                 {
                   number: "(03)",
-                  title: "Development",
+                  title: "IoT Integration",
                   services: [
-                    "WordPress",
-                    "Webflow",
-                    "Laravel Framework",
-                    "React & Flutter",
-                    "Design System",
+                    "Real-time sensor data and smart device connectivity for comprehensive system monitoring.",
                   ],
-                  img: "/assets/imgs/gallery/image-5.webp",
-                },
-                {
-                  number: "(04)",
-                  title: "Digital Marketing",
-                  services: [
-                    "Online Marketing",
-                    "SEO-Marketing",
-                    "Strategy",
-                    "Market Research",
-                    "Social Reform",
-                  ],
-                  img: "/assets/imgs/gallery/image-6.webp",
+                  img:  "/assets/imgs/solutions/img3.png",
                 },
               ].map((service, index) => (
                 <div className="service-box fade-anim" key={index}>
@@ -104,11 +78,8 @@ export default function ServiceAreaSix() {
               ))}
             </div>
           </div>
-
-          {/* Service Content Wrapper */}
-          <ServiceContentWrapper/>
         </div>
       </div>
     </section>
   );
-};
+}

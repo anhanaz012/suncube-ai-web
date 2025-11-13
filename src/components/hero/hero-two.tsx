@@ -1,6 +1,6 @@
-import Image from "next/image";
 import shape from "@/assets/imgs/shape/shape-7.webp";
-import gallery_img from "@/assets/imgs/gallery/image-9.webp";
+import img from "@/assets/imgs/gallery/img1.jpeg"
+import Image from "next/image";
 
 export default function HeroTwo() {
   return (
@@ -15,8 +15,7 @@ export default function HeroTwo() {
                   data-delay="0.45"
                   data-direction="left"
                 >
-                  Design <br />
-                  Edge
+                  Comprehensive
                   <Image
                     className="title-shape-1 fade-anim"
                     data-delay="1.9"
@@ -31,13 +30,13 @@ export default function HeroTwo() {
                     data-delay="1.9"
                     data-offset="100"
                     data-direction="right"
-                    src="https://rrdevs.net/project-video/antoni.gif"
+                    src={img}
                     alt="image"
                     width={268}
                     height={150}
                   />
-                  creative <br />
-                  Agency
+                  Solar <br />
+                  Solutions
                 </h1>
               </div>
             </div>
@@ -46,26 +45,25 @@ export default function HeroTwo() {
             <div className="text-wrapper">
               <p
                 className="text info-text fade-anim"
+                style={{marginTop:'180px !important'}}
                 data-delay="2.15"
                 data-offset="100"
                 data-direction="right"
               >
-                An{" "}
-                <span>award winning</span> creative agency, working based in
-                Germany
+                An <span>AI Powered</span> Energy Systems
               </p>
               <p className="text about-text rr_title_anim">
-                Redox is the first and only creative agency for your real
-                exploration. It’s one private place to save everything you can
-                realize about digital beautifully design.
+                From residential homes to large commercial installations, our
+                AI-powered platform scales to meet your energy needs while
+                maximizing efficiency and profitability.
               </p>
             </div>
             <div className="hero-thumb fade-anim parallax-view">
-              <Image
-                src={gallery_img}
+              <img
+                src="https://www.westcoastsolar.com/wp-content/uploads/2023/02/post-04_california-history_01-1536x864.jpg"
                 alt="image"
                 data-speed="0.6"
-                style={{ height: "auto" }}
+                style={{ height: "500px", objectFit: "cover", width: "100%" }}
               />
             </div>
           </div>

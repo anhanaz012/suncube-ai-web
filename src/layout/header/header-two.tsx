@@ -3,7 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 import MainMenu from "./main-menu";
 import Image from "next/image";
-import logo from "@/assets/imgs/logo/logo-3.png";
+import logo from '@/assets/imgs/logo/logo01.png';
 import icon from "@/assets/imgs/icon/icon-2.webp";
 import SideToggle from "@/components/common/side-toggle";
 
@@ -21,7 +21,7 @@ export default function HeaderTwo() {
                     src={logo}
                     className="normal-logo"
                     alt="Site Logo"
-                    style={{ height: "auto" }}
+                    style={{ height: "auto",minHeight:'140px',minWidth:'140px' }}
                   />
                 </Link>
               </div>
@@ -29,10 +29,10 @@ export default function HeaderTwo() {
                 <MainMenu />
               </div>
               <div className="header__button">
-                <Link href="/contact" className="rr-btn">
+                <Link href="/portal-login" className="rr-btn">
                   <span className="btn-wrap">
-                    <span className="text-one">Let’s Talk</span>
-                    <span className="text-two">Let’s Talk</span>
+                    <span className="text-one">Portal Login</span>
+                    <span className="text-two">Portal Login</span>
                   </span>
                 </Link>
               </div>

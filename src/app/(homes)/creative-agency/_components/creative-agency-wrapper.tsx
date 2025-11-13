@@ -11,10 +11,12 @@ import {
 } from "@/utils/title-anim";
 import { movingTestimonial } from "@/utils/testimonial-anim";
 import { circularAnim } from "@/utils/circular-anim";
-import { serviceAnimation } from "@/utils/service-anim";
+import { serviceAnimation, serviceAnimationTwo } from "@/utils/service-anim";
 import { ctaAnim } from "@/utils/cta-anim";
 import { aboutAnim } from "@/utils/about-anim";
 import { workAnimation } from "@/utils/work-anim";
+import { throwableAnimation } from "@/utils/throwable-anim";
+import { growAnimation } from "@/utils/img-anim";
 
 type Props = {
   children: React.ReactNode;
@@ -33,7 +35,10 @@ export default function CreativeAgencyWrapper({ children }: Props) {
       aboutAnim();
       workAnimation();
       titleAnimation();
+      throwableAnimation();
+      serviceAnimationTwo();
       fadeAnimation();
+      growAnimation();
       textInvertWithScrollAnimation();
     }, 100);
     return () => clearTimeout(timer);

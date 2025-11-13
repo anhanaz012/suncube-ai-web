@@ -4,7 +4,7 @@ const menuData: MenuItem[] = [
   { title: "Home", href: "/" },
   {
     title: "Solutions",
-    href: "#",
+    href: "/solutions",
     children: [
       { title: "Residential Solar + AI", href: "/solutions/residential-solar" },
       {

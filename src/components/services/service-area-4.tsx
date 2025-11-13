@@ -5,42 +5,56 @@ import Link from "next/link";
 const services = [
   {
     number: "01",
-    title: "Art Direction",
+    title: "Residential Solar + AI ",
     features: [
-      "Design Strategy",
-      "Prototyping & Wireframe",
-      "Design system",
-      "Usability testing",
+      "Real-time monitoring",
+      "Predictive maintenance ",
+      "AI-based optimization for home energy flow",
     ],
   },
   {
     number: "02",
-    title: "Brand Guideline",
+    title: "Commercial & Industrial Solar ",
     features: [
-      "Design Strategy",
-      "Prototyping & Wireframe",
-      "Design system",
-      "Usability testing",
+      "Enterprise-grade solar optimization",
+      "Predictive maintenance for uptime ",
+      "Smart grid export and billing ",
     ],
   },
   {
     number: "03",
-    title: "Art Direction",
+    title: "Smart Grid & Virtual Power Plant",
     features: [
-      "Design Strategy",
-      "Prototyping & Wireframe",
-      "Design system",
-      "Usability testing",
+      "AI-based grid perception and control",
+      "Load balancing automation",
+      "Virtual power plant coordination",
     ],
   },
   {
     number: "04",
-    title: "Brand Guideline",
+    title: "AI Monitoring & Predictive Maintenance",
     features: [
-      "Design Strategy",
-      "Prototyping & Wireframe",
-      "Design system",
-      "Usability testing",
+      "24/7 AI-based performance monitoring",
+      "Predictive maintenance forecasting",
+      "Automatic fault detection",
+    ],
+  },
+  {
+    number: "05",
+    title: "Data Insights & Forecasting",
+    features: [
+      "AI-driven energy forecasting",
+      "Weather-based performance prediction",
+      "Real-time system insights and reports",
+    ],
+  },
+  {
+    number: "06",
+    title: "Cloud Dashboard",
+    features: [
+      "Centralized cloud-based monitoring",
+      "Secure access control and analytics ",
+      "Live performance visualization",
     ],
   },
 ];
@@ -49,7 +63,7 @@ type IProps = {
   wrapperCls?: string;
 };
 
-const ServiceAreaFour = ({wrapperCls}:IProps) => {
+const ServiceAreaFour = ({ wrapperCls }: IProps) => {
   return (
     <section className="service-area-4">
       <div className="container large">
@@ -59,13 +73,13 @@ const ServiceAreaFour = ({wrapperCls}:IProps) => {
               {services.map((service, index) => (
                 <div className="service-box fade-anim" key={index}>
                   <span className="number">{service.number}</span>
-                  <h2 className="title">
+                  <h2 className="service-title">
                     <Link href="/service-details">{service.title}</Link>
                   </h2>
                   <div className="feature-list">
                     <ul>
                       {service.features.map((feature, i) => (
-                        <li key={i}>{feature}</li>
+                        <li key={i} className="cursor-pointer">{feature}</li>
                       ))}
                     </ul>
                   </div>
@@ -74,11 +88,11 @@ const ServiceAreaFour = ({wrapperCls}:IProps) => {
 
               <div className="service-thumb">
                 <Image
-                  src="/assets/imgs/project/image-29.webp"
+                  src="/assets/imgs/project/image.png"
                   alt="image not found"
                   width={1920}
                   height={970}
-                  style={{height:"auto"}}
+                  style={{ height: "auto",maxHeight:'800px' }}
                 />
                 <div className="service-thumb-line-wrapper">
                   {Array.from({ length: 11 }).map((_, i) => (

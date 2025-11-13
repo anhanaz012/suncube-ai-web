@@ -6352,7 +6352,9 @@ video.video-area {
 .dark .services-wrapper-4 .service-thumb-line-wrapper span {
   background-color: var(--black);
 }
-
+.service-title{
+  text-transform: uppercase !important;
+}
 /* creative agency page css */
 .body-creative-agency {
   position: relative;

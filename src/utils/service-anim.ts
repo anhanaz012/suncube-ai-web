@@ -47,7 +47,7 @@ export const serviceAnimationTwo = () => {
     
     const mm = gsap.matchMedia();
 
-    mm.add("(min-width: 1024px)", () => {
+    mm.add("(min-width: 1200px)", () => {
       const container = document.querySelector(".service-area-4") as HTMLElement | null;
       const track = document.querySelector(".services-wrapper-4") as HTMLElement | null;
       if (!container || !track) return;

@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import logo from "@/assets/imgs/logo/logo-light.png";
+import logo from "@/assets/imgs/logo/logo01.png";
 import Image from "next/image";
 import menuData from "@/data/menu-data";
 
@@ -25,13 +25,13 @@ export default function SideToggle({ isOpen, onSideToggle }: IProps) {
       <aside className="fix">
         <div className={`side-info ${isOpen ? "info-open" : ""}`}>
           <div className="side-info-content">
-            <div className="offset-widget offset-header">
+            <div className="offset-widget offset-header" style={{alignItems:'center'}}>
               <div className="offset-logo">
                 <Link href="/">
                   <Image
                     src={logo}
                     alt="site logo"
-                    style={{ height: "auto" }}
+                    style={{ height: "auto",minHeight:'150px',minWidth:'150px' }}
                   />
                 </Link>
               </div>

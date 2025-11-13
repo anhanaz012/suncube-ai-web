@@ -2,7 +2,7 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import Image from "next/image";
-import logo from "@/assets/imgs/logo/logo02.png";
+import logo from "@/assets/imgs/logo/logo01.png";
 import icon from "@/assets/imgs/icon/icon-1.webp";
 
 const Footer: React.FC = () => {
@@ -10,15 +10,16 @@ const Footer: React.FC = () => {
 
   const handleSubscribe = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
-    // Add subscription logic here (e.g., API call)
     alert(`Subscribed with email: ${email}`);
-    setEmail(''); // Clear the input field after subscribing
+    setEmail('')
   };
 
   return (
     <footer className="footer-area">
       <div className="container large">
-        <div className="footer-top-inner">
+        <div className="footer-top-inner" style={{
+          alignItems:'center !important',
+        }}>
           <div className="footer-logo">
             <Link href="/">
               <Image
@@ -39,10 +40,9 @@ const Footer: React.FC = () => {
             </div>
           </div>
         </div>
-
         <div className="footer-widget-wrapper-box">
           <div className="footer-widget-wrapper">
-            <div className="footer-widget-box newsletter">
+            <div className="footer-widget-box newsletter" style={{minWidth:'280px'}}>
               <form action="#" className="subscribe-form">
                 <div className="input-field">
                   <input
