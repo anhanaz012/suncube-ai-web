@@ -11,7 +11,7 @@ export default function CtaAreaFour() {
               <div className="title-wrapper">
                 <h2 className="section-title font-bdogrotesk-regular">
                   <Link href="/contact">
-                    Let’s
+                    Bring Suncube AI
                     <span className="icon">
                       <Image
                         className="first"
@@ -31,7 +31,7 @@ export default function CtaAreaFour() {
                       />
                     </span>{" "}
                     <br />
-                    build a brand now
+                    to your Home.
                   </Link>
                 </h2>
               </div>

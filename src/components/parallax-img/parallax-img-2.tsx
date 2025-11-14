@@ -4,7 +4,7 @@ export default function ParallaxImgTwo() {
     <div className="image-wrapper parallax-view">
       <img
         className="w-100"
-        src="/assets/imgs/gallery/image-52.webp"
+        src="https://img.freepik.com/premium-photo/worker-sunset-engineer-solar-panel-construction-renewable-energy-electricity_146482-12103.jpg"
         alt="image"
         data-speed="0.1"
       />

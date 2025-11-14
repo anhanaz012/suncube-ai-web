@@ -9,11 +9,11 @@ export default function ApproachAboutArea() {
           <div className="section-header fade-anim">
             <div className="section-title-wrapper">
               <div className="subtitle-wrapper">
-                <span className="section-subtitle">Approach</span>
+                <span className="section-subtitle">Process</span>
               </div>
               <div className="title-wrapper">
                 <h2 className="section-title font-sequelsans-romanbody">
-                  Method of making better result
+                  A Simple Connection. A Smarter Transformation
                 </h2>
               </div>
             </div>
@@ -22,51 +22,46 @@ export default function ApproachAboutArea() {
             <div className="approach-wrapper fade-anim">
               <div className="approach-box">
                 <h2 className="title">
-                  Problem <br />
-                  discovery{" "}
-                  <Image src={shape} alt="image" />
+                  Connection <br />
+                  Setup <Image src={shape} alt="image" />
                 </h2>
                 <div className="approach-list">
                   <ul>
-                    <li>Usability Studies</li>
-                    <li>User Interviews</li>
-                    <li>Stakeholder Interviews</li>
-                    <li>Competitive Research</li>
-                    <li>Insights Report</li>
-                    <li>User Journey</li>
+                    <li>Connect your solar system to Suncube AI </li>
+                    <li>No new hardware required </li>
+                    <li>Instantly syncs with inverters & meters </li>
+                    <li>Secure cloud-based onboarding </li>
+                    <li>Seamless plug-and-play activation</li>
                   </ul>
                 </div>
               </div>
               <div className="approach-box">
                 <h2 className="title">
-                  Design <br />
-                  system ready{" "}
-                  <Image src={shape} alt="image" />
+                  Intelligent <br />
+                  Analysis <Image src={shape} alt="image" />
                 </h2>
                 <div className="approach-list">
                   <ul>
-                    <li>Thinking Workshops</li>
-                    <li>Sitemaps</li>
-                    <li>Concepts</li>
-                    <li>Designs</li>
-                    <li>Prototypes</li>
-                    <li>Usability Studies</li>
+                    <li>AI studies your home’s usage patterns </li>
+                    <li>Evaluates sunlight, weather & seasonal shifts </li>
+                    <li>Learns your daily energy behavior </li>
+                    <li>Detects inefficiencies automatically </li>
+                    <li>Builds a personalized optimization model </li>
                   </ul>
                 </div>
               </div>
               <div className="approach-box">
                 <h2 className="title">
-                  Design <br />
-                  implementation{" "}
+                  Continuous <br />
+                  Optimization{" "}
                 </h2>
                 <div className="approach-list">
                   <ul>
-                    <li>Design</li>
-                    <li>Use Cases</li>
-                    <li>User Flows</li>
-                    <li>Various User Types</li>
-                    <li>Annotations</li>
-                    <li>Interactions</li>
+                    <li>AI auto-adjusts energy flow </li>
+                    <li>Predictive maintenance alerts </li>
+                    <li>Real-time performance tracking </li>
+                    <li>Smart savings recommendations </li>
+                    <li>Works fully in the background — no effort needed </li>
                   </ul>
                 </div>
               </div>

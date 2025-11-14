@@ -13,7 +13,7 @@ export default function HeroThree() {
             <div className="section-title-wrapper">
               <div className="subtitle-wrapper">
                 <span className="section-subtitle">
-                  Award winning marketing agency — 1994®
+                  Solar Built to a Higher Standard®
                 </span>
               </div>
               <div className="title-wrapper">
@@ -21,18 +21,14 @@ export default function HeroThree() {
                   className="section-title font-sequelsans-romanbody fade-anim"
                   data-delay="0.45"
                 >
-                  Ai—driven marketing
-                  <Image
-                    className="title-shape-1"
-                    src={shape_1}
-                    alt="image"
-                  />
-                  agency, based in {" "}
+                  Smarter Energy
+                  <Image className="title-shape-1" src={shape_1} alt="image" />
+                  Made For Smarter Homes.{" "}
                   <span
                     className="text-underline hover-image-wrpper"
                     data-label="activewear"
                   >
-                    Jordan{" "}
+                    Residential Solar{" "}
                     <Image
                       className="image-hover"
                       src={gallery_img}
@@ -41,17 +37,19 @@ export default function HeroThree() {
                       style={{ height: "auto" }}
                     />{" "}
                   </span>
-                  <Image
-                    className="title-shape-2"
-                    src={shape_2}
-                    alt="image"
-                  />
+                  <Image className="title-shape-2" src={shape_2} alt="image" />
                 </h1>
               </div>
             </div>
           </div>
           <div className="section-content">
-            <ul className="social-links fade-anim" data-delay="0.60">
+            <ul
+              style={{
+                visibility: "hidden",
+              }}
+              className="social-links fade-anim"
+              data-delay="0.60"
+            >
               <li>
                 <a href="#">Facebook</a>
               </li>
@@ -70,20 +68,24 @@ export default function HeroThree() {
             </ul>
             <div className="content-middle fade-anim" data-delay="0.75">
               <p className="text info-text">
-                From 1994-2025 <br /> we’re growing fast
+                Powered by AI — <br /> built for homes of today and tomorrow.
               </p>
             </div>
             <div className="content-last fade-anim" data-delay="0.90">
               <div className="text-wrapper">
                 <p className="text about-text rr_title_anim">
-                  We help brands and company in marketing solution. As a
-                  cause-led digital marketing and brand agency, we harness the
-                  power of technology and creativity to drive positive feedback.
+                  Transform your home into an intelligent energy ecosystem.
+                  Suncube AI elevates residential solar from just generating
+                  power to actively managing it. Using real-time monitoring,
+                  predictive maintenance, and weather-aware forecasting, our
+                  system automatically optimizes every watt your home produces.
+                  Your panels don’t just work — they learn, adapt, and deliver
+                  maximum yield with zero effort from you.
                 </p>
               </div>
               <div className="btn-wrapper">
                 <Link href="/contact" className="rr-btn-group">
-                  <span className="b">Get started</span>
+                  <span className="b">Get a Smart Solar Plan</span>
                   <span className="c">
                     <i className="fa-solid fa-arrow-right"></i>
                   </span>

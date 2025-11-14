@@ -1,7 +1,5 @@
-import Image from "next/image";
-import shape_3 from "@/assets/imgs/shape/shape-3.webp";
-import shape_2 from "@/assets/imgs/shape/shape-2.webp";
 import shape_1 from "@/assets/imgs/shape/shape-1.webp";
+import Image from "next/image";
 
 export default function HeroOne() {
   return (
