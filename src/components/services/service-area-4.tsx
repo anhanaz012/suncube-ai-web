@@ -6,6 +6,7 @@ const services = [
   {
     number: "01",
     title: "Residential Solar + AI ",
+    price: "Starting at $12,999",
     features: [
       "Real-time monitoring",
       "Predictive maintenance ",
@@ -15,6 +16,7 @@ const services = [
   {
     number: "02",
     title: "Commercial & Industrial Solar ",
+    price: "Custom Pricing",
     features: [
       "Enterprise-grade solar optimization",
       "Predictive maintenance for uptime ",
@@ -23,6 +25,7 @@ const services = [
   },
   {
     number: "03",
+    price: "Revenue Sharing Model",
     title: "Smart Grid & Virtual Power Plant",
     features: [
       "AI-based grid perception and control",
@@ -32,6 +35,7 @@ const services = [
   },
   {
     number: "04",
+    price: "$99 / Month",
     title: "AI Monitoring & Predictive Maintenance",
     features: [
       "24/7 AI-based performance monitoring",
@@ -42,6 +46,7 @@ const services = [
   {
     number: "05",
     title: "Data Insights & Forecasting",
+    price: "$49 / Month",
     features: [
       "AI-driven energy forecasting",
       "Weather-based performance prediction",
@@ -51,6 +56,7 @@ const services = [
   {
     number: "06",
     title: "Cloud Dashboard",
+    price: "Included with All Plans",
     features: [
       "Centralized cloud-based monitoring",
       "Secure access control and analytics ",
@@ -76,10 +82,20 @@ const ServiceAreaFour = ({ wrapperCls }: IProps) => {
                   <h2 className="service-title">
                     <Link href="/service-details">{service.title}</Link>
                   </h2>
+                  <p
+                    style={{
+                      fontWeight: "bold",
+                      color: "#ff6a3a",
+                    }}
+                  >
+                    {service.price}
+                  </p>
                   <div className="feature-list">
                     <ul>
                       {service.features.map((feature, i) => (
-                        <li key={i} className="cursor-pointer">{feature}</li>
+                        <li key={i} className="cursor-pointer">
+                          {feature}
+                        </li>
                       ))}
                     </ul>
                   </div>
@@ -92,7 +108,7 @@ const ServiceAreaFour = ({ wrapperCls }: IProps) => {
                   alt="image not found"
                   width={1920}
                   height={970}
-                  style={{ height: "auto",maxHeight:'800px' }}
+                  style={{ height: "auto", maxHeight: "800px" }}
                 />
                 <div className="service-thumb-line-wrapper">
                   {Array.from({ length: 11 }).map((_, i) => (

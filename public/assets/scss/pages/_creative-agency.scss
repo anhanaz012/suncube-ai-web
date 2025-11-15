@@ -79,7 +79,7 @@
     }
 
     .section-title {
-        font-size: 200px;
+        font-size: 120px;
         font-weight: 310;
         line-height: 0.85;
         letter-spacing: -0.09em;
@@ -87,7 +87,7 @@
         margin-left: 60px;
 
         @media #{$xxl} {
-            font-size: 140px;
+            font-size: 80px;
 
         }
 
@@ -116,7 +116,7 @@
             margin-top: -35px;
 
             @media #{$xxl} {
-                height: 100px;
+                height: 80px;
                 margin-top: -25px;
             }
 
@@ -134,17 +134,20 @@
                 display: none;
             }
         }
-
+        .service-price {
+        font-weight: bold;
+        color: orange;
+        }
         .title-video {
-            height: 150px;
+            height: 100px;
             margin-right: 10px;
             margin-left: -60px;
             display: inline-block;
             margin-top: -40px;
 
             @media #{$xxl} {
-                height: 100px;
-                margin-top: -25px;
+                height: 60px;
+                margin-top: -30px;
             }
 
             @media #{$xl} {
@@ -204,6 +207,7 @@
             font-family: var(--font_sequelsansromanbody);
             font-size: 18px;
             font-weight: 310;
+            margin-top: 180px;
             line-height: 20px;
             letter-spacing: -0.05em;
             max-width: 211px;

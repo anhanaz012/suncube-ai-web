@@ -32,7 +32,7 @@ export default function HeroTwo() {
                     data-direction="right"
                     src={img}
                     alt="image"
-                    width={268}
+                    width={150}
                     height={150}
                   />
                   Solar <br />
@@ -45,7 +45,7 @@ export default function HeroTwo() {
             <div className="text-wrapper">
               <p
                 className="text info-text fade-anim"
-                style={{marginTop:'180px !important'}}
+                // style={{marginTop:'180px !important'}}
                 data-delay="2.15"
                 data-offset="100"
                 data-direction="right"

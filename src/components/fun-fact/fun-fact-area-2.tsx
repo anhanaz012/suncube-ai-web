@@ -1,52 +1,75 @@
-import Image from "next/image"
-import shape from "@/assets/imgs/shape/shape-12.webp"
-import gallery_img from "@/assets/imgs/gallery/image-17.webp"
-import Link from "next/link"
+import Image, { StaticImageData } from "next/image";
+import Link from "next/link";
 
-export default function FunFactAreaTwo() {
+import defaultShape from "@/assets/imgs/shape/shape-12.webp";
+import defaultGalleryImg from "@/assets/imgs/solutions/img11.png";
+
+interface FunFactAreaTwoProps {
+  heading?: string;
+  buttonText?: string;
+  buttonLink?: string;
+  paragraph?: string;
+  uptime?: string;
+  infoText?: string;
+  shapeImage?: StaticImageData;
+  galleryImage?: StaticImageData;
+}
+
+export default function FunFactAreaTwo({
+  heading = "Industrial Solar Generates Power. But It Doesn’t Manage It.",
+  buttonText = "Get started",
+  buttonLink = "/contact",
+  paragraph = `Factories and commercial sites run on constantly changing loads — heavy machinery, HVAC cycles, and fluctuating peak hours.
+Traditional solar systems can’t adapt to these shifts, leading to unnoticed inefficiencies, intermittent downtime, and unexpected energy spikes. Suncube AI brings intelligence to the system, ensuring your power stays optimized, stable, and cost-efficient.`,
+  uptime = "99.9%",
+  infoText = "Operational Uptime You Can Trust. AI keeps your solar infrastructure stable, efficient, and production-ready — across every shift.",
+  shapeImage = defaultShape,
+  galleryImage = defaultGalleryImg,
+}: FunFactAreaTwoProps) {
   return (
     <section className="funfact-area-2">
       <div className="funfact-area-2-inner section-spacing-top">
         <div className="container large">
+
+          {/* HEADER */}
           <div className="section-header fade-anim">
             <div className="section-title-wrapper">
               <div className="title-wrapper">
-                <h2 className="section-title font-sequelsans-romanbody rr_title_anim">
-                  Yes! we take some smart decisions for brands{" "}
                   <span className="mb-14">
-                    <Link href="/contact" className="rr-btn-group btn-whte">
-                      <span className="b">Get started</span>
-                      <span className="c">
-                        <i className="fa-solid fa-arrow-right"></i>
-                      </span>
+                    <Link href={buttonLink} className="rr-btn-group btn-whte">
+                      <span className="b">{buttonText}</span>
                     </Link>
                   </span>
+                <h2 className="section-title mt-4 font-sequelsans-romanbody rr_title_anim">
+                  {heading}{" "}
+                
                 </h2>
               </div>
             </div>
           </div>
+
+          {/* CONTENT */}
           <div className="section-content">
             <div className="text-wrapper fade-anim">
-              <p className="text">
-                We help brands and company in marketing solution. As a cause-led digital marketing
-                and brand agency, we harness the power of technology and creativity to drive positive feedback.
-              </p>
+              <p className="text">{paragraph}</p>
             </div>
+
             <div className="info-text fade-anim" data-direction="right">
-              <span className="year">1475</span>
+              <span className="year">{uptime} </span>
               <div className="about-info">
-                <Image src={shape} alt="image" />
-                <p className="text">
-                  Projects successfully completed from last 25 years.
-                </p>
+                <Image src={shapeImage} alt="image" />
+                <p className="text">{infoText}</p>
               </div>
             </div>
           </div>
+
         </div>
+
+        {/* GALLERY IMAGE */}
         <div className="thumb fade-anim">
-          <Image src={gallery_img} alt="image" style={{ height: "auto" }} />
+          <Image src={galleryImage} alt="image" style={{ height: "auto" }} />
         </div>
       </div>
     </section>
-  )
+  );
 }

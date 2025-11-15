@@ -1,91 +1,95 @@
-import Image from "next/image";
-import shape_1 from "@/assets/imgs/shape/shape-10.webp";
-import shape_2 from "@/assets/imgs/shape/shape-11.webp";
-import gallery_img from "@/assets/imgs/gallery/image-10.webp";
+import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 
-export default function HeroThree() {
+import defaultShape1 from "@/assets/imgs/shape/shape-10.webp";
+import defaultShape2 from "@/assets/imgs/shape/shape-11.webp";
+import defaultGalleryImg from "@/assets/imgs/gallery/image-10.webp";
+
+interface HeroThreeProps {
+  // subtitle?: string;
+  p1?: string; // "Smarter Energy"
+  p2?: string; // "Made For Smarter Homes."
+  p3?: string; // "Residential Solar"
+
+  highlightImage?: StaticImageData;
+  shape1?: StaticImageData;
+  shape2?: StaticImageData;
+
+  bottomText?: string;
+  description?: string;
+  buttonText?: string;
+  buttonLink?: string;
+}
+
+export default function HeroThree({
+  // subtitle = "Solar Built to a Higher Standard®",
+  p1 = "Smarter Energy",
+  p2 = "Made For Smarter Homes.",
+  p3 = "Residential Solar",
+
+  highlightImage = defaultGalleryImg,
+  shape1 = defaultShape1,
+  shape2 = defaultShape2,
+
+  bottomText = "Powered by AI — built for homes of today and tomorrow.",
+
+  description = `Transform your home into an intelligent energy ecosystem.
+Suncube AI elevates residential solar from just generating power to actively managing it.
+Your panels don’t just work — they learn, adapt, and deliver maximum yield with zero effort.`,
+
+  buttonText = "Get a Smart Solar Plan",
+  buttonLink = "/contact-us",
+}: HeroThreeProps) {
   return (
     <section className="hero-area-3">
       <div className="container large">
         <div className="hero-area-3-inner">
+          {/* Subtitle */}
           <div className="section-header">
             <div className="section-title-wrapper">
-              <div className="subtitle-wrapper">
-                <span className="section-subtitle">
-                  Solar Built to a Higher Standard®
-                </span>
-              </div>
+              {/* <div className="subtitle-wrapper">
+                <span className="section-subtitle">{subtitle}</span>
+              </div> */}
+
+              {/* HEADING */}
               <div className="title-wrapper">
                 <h1
                   className="section-title font-sequelsans-romanbody fade-anim"
                   data-delay="0.45"
                 >
-                  Smarter Energy
-                  <Image className="title-shape-1" src={shape_1} alt="image" />
-                  Made For Smarter Homes.{" "}
-                  <span
-                    className="text-underline hover-image-wrpper"
-                    data-label="activewear"
-                  >
-                    Residential Solar{" "}
+                  {p1}
+                  <Image className="title-shape-1" src={shape1} alt="shape-1" />
+                  {p2}{" "}
+                  <span className="text-underline hover-image-wrpper">
+                    {p3}{" "}
                     <Image
                       className="image-hover"
-                      src={gallery_img}
-                      alt="activewear"
-                      data-image="activewear"
+                      src={highlightImage}
+                      alt="highlight"
                       style={{ height: "auto" }}
-                    />{" "}
+                    />
                   </span>
-                  <Image className="title-shape-2" src={shape_2} alt="image" />
+                  <Image className="title-shape-2" src={shape2} alt="shape-2" />
                 </h1>
               </div>
             </div>
           </div>
+
+          {/* CONTENT */}
           <div className="section-content">
-            <ul
-              style={{
-                visibility: "hidden",
-              }}
-              className="social-links fade-anim"
-              data-delay="0.60"
-            >
-              <li>
-                <a href="#">Facebook</a>
-              </li>
-              <li>
-                <a href="#">Dribbble</a>
-              </li>
-              <li>
-                <a href="#">Behance</a>
-              </li>
-              <li>
-                <a href="#">Twitter</a>
-              </li>
-              <li>
-                <a href="#">Linkedin</a>
-              </li>
-            </ul>
+            <h1 style={{ visibility: "hidden" }}>hidden text</h1>
             <div className="content-middle fade-anim" data-delay="0.75">
-              <p className="text info-text">
-                Powered by AI — <br /> built for homes of today and tomorrow.
-              </p>
+              <p className="text info-text">{bottomText}</p>
             </div>
+
             <div className="content-last fade-anim" data-delay="0.90">
               <div className="text-wrapper">
-                <p className="text about-text rr_title_anim">
-                  Transform your home into an intelligent energy ecosystem.
-                  Suncube AI elevates residential solar from just generating
-                  power to actively managing it. Using real-time monitoring,
-                  predictive maintenance, and weather-aware forecasting, our
-                  system automatically optimizes every watt your home produces.
-                  Your panels don’t just work — they learn, adapt, and deliver
-                  maximum yield with zero effort from you.
-                </p>
+                <p className="text about-text rr_title_anim">{description}</p>
               </div>
+
               <div className="btn-wrapper">
-                <Link href="/contact" className="rr-btn-group">
-                  <span className="b">Get a Smart Solar Plan</span>
+                <Link href={buttonLink} className="rr-btn-group">
+                  <span className="b">{buttonText}</span>
                   <span className="c">
                     <i className="fa-solid fa-arrow-right"></i>
                   </span>

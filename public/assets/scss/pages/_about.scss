@@ -329,10 +329,10 @@
             }
 
             img {
-                width: 250px;
+                width: 150px;
 
                 @media #{$xxl} {
-                    width: 200px;
+                    width: 150px;
                 }
 
                 @media #{$xl} {
