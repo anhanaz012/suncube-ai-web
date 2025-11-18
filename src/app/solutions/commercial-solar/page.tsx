@@ -12,6 +12,7 @@ import Footer from "@/layout/footer/footer-one";
 import defaultShape from "@/assets/imgs/shape/shape-13.webp";
 import HeaderTwo from "@/layout/header/header-two";
 import { Metadata } from "next";
+import CurtainBasedImage from "@/components/common/curtain-image";
 
 export const metadata: Metadata = {
   title: "Redox - Marketing Agency and Portfolio Next js Template",
@@ -42,7 +43,11 @@ export default function CommercialSolar() {
               description="Transform your facility into an intelligent energy ecosystem. Suncube AI elevates industrial and commercial solar from passive power generation to active, adaptive, automated management. With real-time analytics, operational forecasting, and machine-level optimization, your system continuously fine-tunes energy flow for maximum efficiency. Your solar doesn’t just run — it learns, predicts, and enhances performance across every floor and every shift. "
               bottomText="AI-driven energy built for factories, warehouses, and commercial complexes. Smarter operations, lower costs, and cleaner power — round the clock."
             />
-            <ParallaxImgTwo />
+            <CurtainBasedImage
+              src="/assets/imgs/solutions/img11.png"
+              alt="curtain-image"
+            />
+
             <FunFactAreaTwo buttonText={"The Challenge"} />
             <ServiceAreaFive
               heading="Your Facility’s Solar, Upgraded with Intelligence "

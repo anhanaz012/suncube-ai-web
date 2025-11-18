@@ -12,6 +12,7 @@ import Footer from "@/layout/footer/footer-one";
 import defaultShape from "@/assets/imgs/shape/shape-13.webp";
 import HeaderTwo from "@/layout/header/header-two";
 import { Metadata } from "next";
+import CurtainBasedImage from "@/components/common/curtain-image";
 
 export const metadata: Metadata = {
   title: "Redox - Marketing Agency and Portfolio Next js Template",
@@ -42,7 +43,11 @@ export default function DataInsights() {
               description="Suncube AI transforms raw data into live insights. It predicts sunlight patterns, models generation curves, and highlights opportunities — helping you make smarter, data-led energy decisions."
               bottomText="AI analytics that reveal trends, forecast generation, and give you clear insight into every watt."
             />
-            <ParallaxImgTwo />
+            <CurtainBasedImage
+              src="/assets/imgs/solutions/img11.png"
+              alt="curtain-image"
+            />
+
             <FunFactAreaTwo
               buttonText={"The Challenge"}
               infoText="Accuracy delivered through Suncube AI’s weather models that predict performance shifts long before conditions change."

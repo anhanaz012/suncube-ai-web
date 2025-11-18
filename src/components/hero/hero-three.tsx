@@ -47,10 +47,6 @@ Your panels don’t just work — they learn, adapt, and deliver maximum yield w
           {/* Subtitle */}
           <div className="section-header">
             <div className="section-title-wrapper">
-              {/* <div className="subtitle-wrapper">
-                <span className="section-subtitle">{subtitle}</span>
-              </div> */}
-
               {/* HEADING */}
               <div className="title-wrapper">
                 <h1

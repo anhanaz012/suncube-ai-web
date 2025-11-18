@@ -1,16 +1,16 @@
 import MarketingAgencyWrapper from "@/app/(homes)/marketing-agency/_components/marketing-agency-wrapper";
 import ServiceDetailsApproach from "@/app/(service)/service-details/_components/service-details-approach";
+import galleryImg from "@/assets/imgs/solutions/img12.png";
 import ApproachAboutArea from "@/components/approach/approach-about-area";
+import CurtainBasedImage from "@/components/common/curtain-image";
 import CustomCursor from "@/components/common/custom-cursor";
 import CtaAreaFour from "@/components/cta/cta-area-4";
 import FunFactAreaTwo from "@/components/fun-fact/fun-fact-area-2";
 import HeroThree from "@/components/hero/hero-three";
-import ParallaxImgTwo from "@/components/parallax-img/parallax-img-2";
 import ServiceAreaFive from "@/components/services/service-area-5";
 import MainWrapper from "@/components/wrapper/main-wrapper";
 import Footer from "@/layout/footer/footer-one";
 import HeaderTwo from "@/layout/header/header-two";
-import galleryImg from "@/assets/imgs/solutions/img12.png"
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -35,7 +35,7 @@ export default function ResidentialSolar() {
         <MarketingAgencyWrapper>
           <main style={{ marginTop: "70px" }}>
             <HeroThree />
-            <ParallaxImgTwo />
+            <CurtainBasedImage src="/assets/imgs/solutions/img11.png" alt="curtain-image" />
             <FunFactAreaTwo
             galleryImage={galleryImg}
               buttonText="The Challenge"

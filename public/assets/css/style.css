@@ -11588,6 +11588,13 @@ video.video-area {
     max-width: 715px;
   }
 }
+.curtain-container{
+width:600px;
+height:600px;
+padding-left:200px;
+padding-right:200px;
+}
+
 @media only screen and (max-width: 1199px) {
   .hero-area-7 .section-title {
     font-size: 70px;

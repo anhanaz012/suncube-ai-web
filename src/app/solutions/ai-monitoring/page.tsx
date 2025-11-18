@@ -13,6 +13,7 @@ import defaultShape from "@/assets/imgs/shape/shape-13.webp";
 import HeaderTwo from "@/layout/header/header-two";
 import gridImg from "@/assets/imgs/solutions/img11.png"
 import { Metadata } from "next";
+import CurtainBasedImage from "@/components/common/curtain-image";
 
 export const metadata: Metadata = {
   title: "Redox - Marketing Agency and Portfolio Next js Template",
@@ -43,7 +44,8 @@ export default function AIMonitoring() {
               description="Suncube AI analyzes every panel, inverter, and battery in real time. It detects anomalies, predicts breakdowns, and automates maintenance — ensuring uninterrupted power and maximum energy yield."
               bottomText="AI-driven diagnostics that monitor solar health, predict failures, and keep your system performing at peak efficiency — automatically."
             />
-            <ParallaxImgTwo />
+                        <CurtainBasedImage src="/assets/imgs/solutions/img11.png" alt="curtain-image" />
+            
             <FunFactAreaTwo
               buttonText={"The Challenge"}
               heading="Solar Performance Drops Long Before They’re Noticed."

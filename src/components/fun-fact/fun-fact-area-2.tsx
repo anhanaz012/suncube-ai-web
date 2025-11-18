@@ -1,6 +1,5 @@
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
-
 import defaultShape from "@/assets/imgs/shape/shape-12.webp";
 import defaultGalleryImg from "@/assets/imgs/solutions/img11.png";
 
@@ -14,13 +13,11 @@ interface FunFactAreaTwoProps {
   shapeImage?: StaticImageData;
   galleryImage?: StaticImageData;
 }
-
 export default function FunFactAreaTwo({
   heading = "Industrial Solar Generates Power. But It Doesn’t Manage It.",
   buttonText = "Get started",
   buttonLink = "/contact",
-  paragraph = `Factories and commercial sites run on constantly changing loads — heavy machinery, HVAC cycles, and fluctuating peak hours.
-Traditional solar systems can’t adapt to these shifts, leading to unnoticed inefficiencies, intermittent downtime, and unexpected energy spikes. Suncube AI brings intelligence to the system, ensuring your power stays optimized, stable, and cost-efficient.`,
+  paragraph = `Factories and commercial sites run on constantly changing loads — heavy machinery, HVAC cycles, and fluctuating peak hours. Traditional solar systems can’t adapt to these shifts, leading to unnoticed inefficiencies, intermittent downtime, and unexpected energy spikes. Suncube AI brings intelligence to the system, ensuring your power stays optimized, stable, and cost-efficient.`,
   uptime = "99.9%",
   infoText = "Operational Uptime You Can Trust. AI keeps your solar infrastructure stable, efficient, and production-ready — across every shift.",
   shapeImage = defaultShape,
@@ -30,7 +27,6 @@ Traditional solar systems can’t adapt to these shifts, leading to unnoticed in
     <section className="funfact-area-2">
       <div className="funfact-area-2-inner section-spacing-top">
         <div className="container large">
-
           {/* HEADER */}
           <div className="section-header fade-anim">
             <div className="section-title-wrapper">
@@ -42,18 +38,15 @@ Traditional solar systems can’t adapt to these shifts, leading to unnoticed in
                   </span>
                 <h2 className="section-title mt-4 font-sequelsans-romanbody rr_title_anim">
                   {heading}{" "}
-                
                 </h2>
               </div>
             </div>
           </div>
-
           {/* CONTENT */}
           <div className="section-content">
             <div className="text-wrapper fade-anim">
               <p className="text">{paragraph}</p>
             </div>
-
             <div className="info-text fade-anim" data-direction="right">
               <span className="year">{uptime} </span>
               <div className="about-info">
@@ -62,9 +55,7 @@ Traditional solar systems can’t adapt to these shifts, leading to unnoticed in
               </div>
             </div>
           </div>
-
         </div>
-
         {/* GALLERY IMAGE */}
         <div className="thumb fade-anim">
           <Image src={galleryImage} alt="image" style={{ height: "auto" }} />
