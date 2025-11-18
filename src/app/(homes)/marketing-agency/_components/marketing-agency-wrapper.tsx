@@ -26,7 +26,6 @@ export default function MarketingAgencyWrapper({ children }: Props) {
       approachAnimation();
       funFactAnimation();
       approachAnimationTwo();
-
       charAnimation();
     }, 100);
     return () => clearTimeout(timer);

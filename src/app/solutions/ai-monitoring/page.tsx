@@ -1,19 +1,18 @@
 import MarketingAgencyWrapper from "@/app/(homes)/marketing-agency/_components/marketing-agency-wrapper";
 import ServiceDetailsApproach from "@/app/(service)/service-details/_components/service-details-approach";
+import defaultShape from "@/assets/imgs/shape/shape-13.webp";
+import gridImg from "@/assets/imgs/solutions/img11.png";
 import ApproachAboutArea from "@/components/approach/approach-about-area";
+import CurtainBasedImage from "@/components/common/curtain-image";
 import CustomCursor from "@/components/common/custom-cursor";
 import CtaAreaFour from "@/components/cta/cta-area-4";
 import FunFactAreaTwo from "@/components/fun-fact/fun-fact-area-2";
 import HeroThree from "@/components/hero/hero-three";
-import ParallaxImgTwo from "@/components/parallax-img/parallax-img-2";
 import ServiceAreaFive from "@/components/services/service-area-5";
 import MainWrapper from "@/components/wrapper/main-wrapper";
 import Footer from "@/layout/footer/footer-one";
-import defaultShape from "@/assets/imgs/shape/shape-13.webp";
 import HeaderTwo from "@/layout/header/header-two";
-import gridImg from "@/assets/imgs/solutions/img11.png"
 import { Metadata } from "next";
-import CurtainBasedImage from "@/components/common/curtain-image";
 
 export const metadata: Metadata = {
   title: "Redox - Marketing Agency and Portfolio Next js Template",

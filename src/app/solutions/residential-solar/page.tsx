@@ -37,7 +37,7 @@ export default function ResidentialSolar() {
             <HeroThree />
             <CurtainBasedImage src="/assets/imgs/solutions/img11.png" alt="curtain-image" />
             <FunFactAreaTwo
-            galleryImage={galleryImg}
+              galleryImage={galleryImg}
               buttonText="The Challenge"
               infoText="Guaranteed System Uptime. AI keeps your solar network running — always. "
               heading="Traditional Solar Stops at Generation. We Don’t."

@@ -48,6 +48,7 @@ export default function CurtainBasedImage({
   return (
     <div className="curtain-wrapper" ref={wrapperRef}>
       <p style={{ display: textDisplay }}>(SUNCUBE)</p>
+
       <img
         src={src}
         alt={alt}

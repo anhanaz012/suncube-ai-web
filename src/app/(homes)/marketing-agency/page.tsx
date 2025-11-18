@@ -24,16 +24,8 @@ export const metadata: Metadata = {
 export default function HomeMarketingAgencyPage() {
   return (
     <>
-
-      {/* custom cursor start */}
       <CustomCursor />
-      {/* custom cursor end */}
-
-      {/* Header area start */}
       <HeaderThree />
-      {/* Header area end */}
-
-      {/* Main wrapper start */}
       <MainWrapper
         bodyCls={[
           "body-wrapper",
@@ -44,11 +36,7 @@ export default function HomeMarketingAgencyPage() {
       >
         <MarketingAgencyWrapper>
           <main>
-            {/* Hero area start */}
             <HeroThree />
-            {/* Hero area end */}
-
-            {/* image wrapper start */}
             <div className="image-wrapper fade-anim parallax-view">
               <Image
                 className="w-100"
@@ -58,43 +46,17 @@ export default function HomeMarketingAgencyPage() {
                 style={{ height: "auto" }}
               />
             </div>
-            {/* image wrapper end */}
-
-            {/* service area start */}
             <ServiceAreaThree />
-            {/* service area end */}
-
-            {/* work area start */}
             <WorkAreaThree />
-            {/* work area end */}
-
-            {/* approach area start */}
             <ApproachArea />
-            {/* approach area end */}
-
-            {/* fun fact area start */}
             <FunFactAreaTwo />
-            {/* fun fact area end */}
-
-            {/* client area start */}
             <ClientAreaThree />
-            {/* client area end */}
-
-            {/* blog area start */}
             <BlogArea />
-            {/* blog area end */}
-
-            {/* cta area start */}
             <CtaAreaThree />
-            {/* cta area end */}
           </main>
-
-          {/* Footer area start */}
           <FooterTwo />
-          {/* Footer area end */}
         </MarketingAgencyWrapper>
       </MainWrapper>
-      {/* Main wrapper end */}
     </>
   );
 }
