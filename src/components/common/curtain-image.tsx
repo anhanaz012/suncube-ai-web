@@ -12,7 +12,7 @@ export default function CurtainBasedImage({
   const wrapperRef = useRef<HTMLDivElement | null>(null);
   const isVisibleRef = useRef(false);
   const [step, setStep] = useState(0);
-  const widthMap = ["500px", "33%", "66%", "100%"];
+  const widthMap = ["30%", "33%", "66%", "100%"];
   const widthValue = widthMap[step];
   const textDisplay = step === 0 ? "block" : "none";
   useEffect(() => {
@@ -24,16 +24,23 @@ export default function CurtainBasedImage({
     if (wrapperRef.current) observer.observe(wrapperRef.current);
     return () => observer.disconnect();
   }, []);
+
+  // Scroll logic
   useEffect(() => {
     const node = wrapperRef.current;
     if (!node) return;
+
     const onWheel = (e: WheelEvent) => {
       if (!isVisibleRef.current) return;
+
+      // Stop scroll + expand
       if (step !== 3 && e.deltaY > 0) {
         e.preventDefault();
         setStep((s) => Math.min(3, s + 1));
         return;
       }
+
+      // Stop scroll + collapse
       if (step !== 0 && e.deltaY < 0) {
         e.preventDefault();
         setStep((s) => Math.max(0, s - 1));
@@ -48,7 +55,6 @@ export default function CurtainBasedImage({
   return (
     <div className="curtain-wrapper" ref={wrapperRef}>
       <p style={{ display: textDisplay }}>(SUNCUBE)</p>
-
       <img
         src={src}
         alt={alt}

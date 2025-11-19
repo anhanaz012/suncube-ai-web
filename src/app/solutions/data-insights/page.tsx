@@ -1,24 +1,67 @@
 import MarketingAgencyWrapper from "@/app/(homes)/marketing-agency/_components/marketing-agency-wrapper";
 import ServiceDetailsApproach from "@/app/(service)/service-details/_components/service-details-approach";
+import defaultShape from "@/assets/imgs/shape/shape-13.webp";
 import ApproachAboutArea from "@/components/approach/approach-about-area";
+import CurtainBasedImage from "@/components/common/curtain-image";
 import CustomCursor from "@/components/common/custom-cursor";
 import CtaAreaFour from "@/components/cta/cta-area-4";
 import FunFactAreaTwo from "@/components/fun-fact/fun-fact-area-2";
 import HeroThree from "@/components/hero/hero-three";
-import ParallaxImgTwo from "@/components/parallax-img/parallax-img-2";
-import ServiceAreaFive from "@/components/services/service-area-5";
+import ServiceAreaSix, {
+  ServiceItem,
+} from "@/components/services/service-area-6";
 import MainWrapper from "@/components/wrapper/main-wrapper";
 import Footer from "@/layout/footer/footer-one";
-import defaultShape from "@/assets/imgs/shape/shape-13.webp";
 import HeaderTwo from "@/layout/header/header-two";
 import { Metadata } from "next";
-import CurtainBasedImage from "@/components/common/curtain-image";
 
 export const metadata: Metadata = {
   title: "Redox - Marketing Agency and Portfolio Next js Template",
   description:
     "Redox is a marketing agency and portfolio template built with Next.js, designed to showcase your work and services effectively.",
 };
+const services: ServiceItem[] = [
+  {
+    number: "(001)",
+    title: "Advanced Yield Forecasting",
+    services: [
+      "AI predicts solar output using weather patterns, irradiation trends, and real-time environmental changes.",
+    ],
+    img: "/assets/imgs/solutions/img5.png",
+  },
+  {
+    number: "(002)",
+    title: "Performance Trend Analysis",
+    services: [
+      "Identifies long-term behavior, daily cycles, seasonal variations, and hidden yield losses.",
+    ],
+    img: "/assets/imgs/solutions/img6.png",
+  },
+  {
+    number: "(003)",
+    title: "Weather Impact Modeling",
+    services: [
+      "Simulates cloudy days, heatwaves, and shading effects to show how conditions affect generation.",
+    ],
+    img: "/assets/imgs/solutions/img7.png",
+  },
+  {
+    number: "(004)",
+    title: "Loss Factor Detection",
+    services: [
+      "Highlights inefficiencies caused by dirt, heat, wiring issues, aging panels, or system mismatch.",
+    ],
+    img: "/assets/imgs/solutions/img8.png",
+  },
+  {
+    number: "(005)",
+    title: "Unified Insight Dashboard",
+    services: [
+      "All metrics, trends, forecasts, and sustainability stats in one clean, intelligent interface built for clarity.",
+    ],
+    img: "/assets/imgs/solutions/img9.png",
+  },
+];
 
 export default function DataInsights() {
   return (
@@ -55,51 +98,16 @@ export default function DataInsights() {
               uptime="98.7%"
               heading="Solar Data Exists, But It’s Rarely Truly Understood."
             />
-            <ServiceAreaFive
-              heading="The Insight Engine Your Solar Always Needed"
-              description="Suncube AI analyzes generation patterns, sunlight availability, temperature effects, and consumption behavior in real time. It forecasts output, highlights inefficiencies, and reveals trends that guide better energy planning. Here’s how intelligence turns data into real, measurable performance:"
-              services={[
-                {
-                  id: "10",
-                  number: "(001)",
-                  title: "Advanced Yield Forecasting",
-                  text: "AI predicts solar output using weather patterns, irradiation trends, and real-time environmental changes.",
-                  image: "/assets/imgs/solutions/img5.png",
-                  link: "/solutions/commercial-solar",
-                },
-                {
-                  id: "11",
-                  number: "(002)",
-                  title: "Performance Trend Analysis",
-                  text: "Identifies long-term behavior, daily cycles, seasonal variations, and hidden yield losses.",
-                  image: "/assets/imgs/solutions/img6.png",
-                  link: "/solutions/commercial-solar",
-                },
-                {
-                  id: "12",
-                  number: "(003)",
-                  title: "Weather Impact Modeling",
-                  text: "Simulates cloudy days, heatwaves, and shading effects to show how conditions affect generation.",
-                  image: "/assets/imgs/solutions/img7.png",
-                  link: "/solutions/commercial-solar",
-                },
-                {
-                  id: "13",
-                  number: "(004)",
-                  title: "Loss Factor Detection",
-                  text: "Highlights inefficiencies caused by dirt, heat, wiring issues, aging panels, or system mismatch.",
-                  image: "/assets/imgs/solutions/img8.png",
-                  link: "/solutions/commercial-solar",
-                },
-                {
-                  id: "14",
-                  number: "(005)",
-                  title: "Unified Insight Dashboard",
-                  text: "All metrics, trends, forecasts, and sustainability stats in one clean, intelligent interface built for clarity.",
-                  image: "/assets/imgs/solutions/img9.png",
-                  link: "/solutions/commercial-solar",
-                },
-              ]}
+            <div
+              style={{
+                marginTop: "40px",
+              }}
+            ></div>
+            <ServiceAreaSix
+              subtitle="The Suncube AI Solution"
+              title="The Insight Engine Your Solar Always Needed"
+              services={services}
+              serviceDetailsLink="/service-details"
             />
             <ServiceDetailsApproach
               approachItems={[

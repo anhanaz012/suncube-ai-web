@@ -8,6 +8,9 @@ import CtaAreaFour from "@/components/cta/cta-area-4";
 import FunFactAreaTwo from "@/components/fun-fact/fun-fact-area-2";
 import HeroThree from "@/components/hero/hero-three";
 import ServiceAreaFive from "@/components/services/service-area-5";
+import ServiceAreaSix, {
+  ServiceItem,
+} from "@/components/services/service-area-6";
 import MainWrapper from "@/components/wrapper/main-wrapper";
 import HeaderTwo from "@/layout/header/header-two";
 import { Metadata } from "next";
@@ -17,6 +20,49 @@ export const metadata: Metadata = {
   description:
     "Redox is a marketing agency and portfolio template built with Next.js, designed to showcase your work and services effectively.",
 };
+
+const services: ServiceItem[] = [
+  {
+    number: "(001)",
+    title: "Centralized Fleet Monitoring",
+    services: [
+      "View all sites, assets, inverters, panels, and batteries from a single cloud dashboard.",
+    ],
+    img: "/assets/imgs/solutions/img5.png",
+  },
+  {
+    number: "(002)",
+    title: "Cross-Site Performance Comparison",
+    services: [
+      "Identify your best-performing locations and spot low-yield sites instantly.",
+    ],
+    img: "/assets/imgs/solutions/img6.png",
+  },
+  {
+    number: "(003)",
+    title: "Unified Device Management",
+    services: [
+      "Manage inverters, meters, sensors, and batteries across every installation from one panel.",
+    ],
+    img: "/assets/imgs/solutions/img7.png",
+  },
+  {
+    number: "(004)",
+    title: "Cloud-Based Alerts & Reports",
+    services: [
+      "Receive real-time notifications, automated reports, and issue summaries for all sites.",
+    ],
+    img: "/assets/imgs/solutions/img8.png",
+  },
+  {
+    number: "(005)",
+    title: "Scalable Multi-User Access",
+    services: [
+      "Admins, technicians, and owners get role-based access tailored to their responsibilities.",
+    ],
+    img: "/assets/imgs/solutions/img9.png",
+  },
+];
 
 export default function CloudDashboard() {
   return (
@@ -53,51 +99,16 @@ export default function CloudDashboard() {
               paragraph="Operators juggle scattered portals, missing data, inconsistent reports, and siloed device information. Monitoring dozens of systems manually leads to blind spots, inefficiencies, and delayed actions. Suncube AI fixes this with a unified dashboard that centralizes control, standardizes insights, and brings every site together in one intelligent cloud layer."
               heading="Managing Multiple Solar Sites Shouldn’t Feel This Complicated."
             />
-            <ServiceAreaFive
-              heading="The Intelligent Control Layer Your Solar Network Needed"
-              description="Suncube AI centralizes your entire solar ecosystem — unifying sites, devices, alerts, reports, and performance analytics.It simplifies operations, boosts oversight, and helps you manage distributed systems as one. Here’s how intelligence transforms multi-site control:"
-              services={[
-                {
-                  id: "10",
-                  number: "(001)",
-                  title: "Centralized Fleet Monitoring",
-                  text: "View all sites, assets, inverters, panels, and batteries from a single cloud dashboard.",
-                  image: "/assets/imgs/solutions/img5.png",
-                  link: "/solutions/commercial-solar",
-                },
-                {
-                  id: "11",
-                  number: "(002)",
-                  title: "Cross-Site Performance Comparison",
-                  text: "Identify your best-performing locations and spot low-yield sites instantly.",
-                  image: "/assets/imgs/solutions/img6.png",
-                  link: "/solutions/commercial-solar",
-                },
-                {
-                  id: "12",
-                  number: "(003)",
-                  title: "Unified Device Management",
-                  text: "Manage inverters, meters, sensors, and batteries across every installation from one panel.",
-                  image: "/assets/imgs/solutions/img7.png",
-                  link: "/solutions/commercial-solar",
-                },
-                {
-                  id: "13",
-                  number: "(004)",
-                  title: "Cloud-Based Alerts & Reports",
-                  text: "Receive real-time notifications, automated reports, and issue summaries for all sites.",
-                  image: "/assets/imgs/solutions/img8.png",
-                  link: "/solutions/commercial-solar",
-                },
-                {
-                  id: "14",
-                  number: "(005)",
-                  title: "Scalable Multi-User Access",
-                  text: "Admins, technicians, and owners get role-based access tailored to their responsibilities.",
-                  image: "/assets/imgs/solutions/img9.png",
-                  link: "/solutions/commercial-solar",
-                },
-              ]}
+            <div
+              style={{
+                marginTop: "40px",
+              }}
+            ></div>
+            <ServiceAreaSix
+              subtitle="The Suncube AI Solution"
+              title="The Intelligent Control Layer Your Solar Network Needed"
+              services={services}
+              serviceDetailsLink="/service-details"
             />
             <ServiceDetailsApproach
               approachItems={[

@@ -13,12 +13,58 @@ import defaultShape from "@/assets/imgs/shape/shape-13.webp";
 import HeaderTwo from "@/layout/header/header-two";
 import { Metadata } from "next";
 import CurtainBasedImage from "@/components/common/curtain-image";
+import ServiceAreaSix, {
+  ServiceItem,
+} from "@/components/services/service-area-6";
 
 export const metadata: Metadata = {
   title: "Redox - Marketing Agency and Portfolio Next js Template",
   description:
     "Redox is a marketing agency and portfolio template built with Next.js, designed to showcase your work and services effectively.",
 };
+const services: ServiceItem[] = [
+  {
+    number: "(001)",
+    title: "Predictive Optimization ",
+    services: [
+      "AI analyzes sunlight availability, machinery cycles, and environmental conditions to ensure consistent output even during fluctuating operational loads.",
+    ],
+    img: "/assets/imgs/solutions/img5.png",
+  },
+  {
+    number: "(002)",
+    title: "Smart Power Routing ",
+    services: [
+      "Automatically directs solar between production floors, HVAC, storage systems, and the grid — ensuring uninterrupted operations with zero wastage.",
+    ],
+    img: "/assets/imgs/solutions/img6.png",
+  },
+  {
+    number: "(003)",
+    title: "Predictive Maintenance",
+    services: [
+      "Identifies inverter strain, panel degradation, dust build-up, and equipment inefficiencies before they impact production or power quality.",
+    ],
+    img: "/assets/imgs/solutions/img7.png",
+  },
+  {
+    number: "(004)",
+    title: "AI + Blockchain Billing",
+    services: [
+      "Tracks exported power, grid transactions, and energy credits with tamper-proof, automated billing — built for audit-ready corporate compliance. ",
+    ],
+    img: "/assets/imgs/solutions/img8.png",
+  },
+  {
+    number: "(005)",
+    title: "Sustainability Insights",
+    services: [
+      "Converts your energy data into measurable environmental impact — supporting ESG reporting, certifications, and regulatory compliance. ",
+    ],
+    img: "/assets/imgs/solutions/img9.png",
+  },
+];
+
 
 export default function CommercialSolar() {
   return (
@@ -47,53 +93,13 @@ export default function CommercialSolar() {
               src="/assets/imgs/solutions/img11.png"
               alt="curtain-image"
             />
-
             <FunFactAreaTwo buttonText={"The Challenge"} />
-            <ServiceAreaFive
-              heading="Your Facility’s Solar, Upgraded with Intelligence "
-              description="Suncube AI doesn’t just monitor energy — it interprets it. Our adaptive system learns from your machinery cycles, building patterns, shift timings, and weather forecasts to deliver maximum output with minimal waste. Every unit is optimized, audited, and accounted for — without manual effort. Here’s how intelligence transforms your industrial energy flow: "
-              services={[
-                {
-                  id: "10",
-                  number: "(001)",
-                  title: "Predictive Optimization ",
-                  text: "AI analyzes sunlight availability, machinery cycles, and environmental conditions to ensure consistent output even during fluctuating operational loads.",
-                  image: "/assets/imgs/solutions/img5.png",
-                  link: "/solutions/commercial-solar",
-                },
-                {
-                  id: "11",
-                  number: "(002)",
-                  title: "Smart Power Routing ",
-                  text: "Automatically directs solar between production floors, HVAC, storage systems, and the grid — ensuring uninterrupted operations with zero wastage.",
-                  image: "/assets/imgs/solutions/img6.png",
-                  link: "/solutions/commercial-solar",
-                },
-                {
-                  id: "12",
-                  number: "(003)",
-                  title: "Predictive Maintenance",
-                  text: "Identifies inverter strain, panel degradation, dust build-up, and equipment inefficiencies before they impact production or power quality.",
-                  image: "/assets/imgs/solutions/img7.png",
-                  link: "/solutions/commercial-solar",
-                },
-                {
-                  id: "13",
-                  number: "(004)",
-                  title: "AI + Blockchain Billing",
-                  text: "Tracks exported power, grid transactions, and energy credits with tamper-proof, automated billing — built for audit-ready corporate compliance. ",
-                  image: "/assets/imgs/solutions/img8.png",
-                  link: "/solutions/commercial-solar",
-                },
-                {
-                  id: "14",
-                  number: "(005)",
-                  title: "Sustainability Insights",
-                  text: "Converts your energy data into measurable environmental impact — supporting ESG reporting, certifications, and regulatory compliance. ",
-                  image: "/assets/imgs/solutions/img9.png",
-                  link: "/solutions/commercial-solar",
-                },
-              ]}
+            <div style={{ marginTop: "40px" }}></div>
+            <ServiceAreaSix
+              subtitle="The Suncube AI Solution"
+              title="Your Facility’s Solar, Upgraded with Intelligence"
+              services={services}
+              serviceDetailsLink="/service-details"
             />
             <ServiceDetailsApproach
               approachItems={[

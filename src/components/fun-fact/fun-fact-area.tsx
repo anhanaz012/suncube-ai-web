@@ -26,8 +26,7 @@ export default function FunFactArea() {
               </div>
               <div className="funfact-item go-visible">
                 <span className="number">260+</span>
-                <p className="text">Crafted responsive, user-centered
-                  website & app.</p>
+                <p className="text">Crafted responsive, user-centered website & app.</p>
               </div>
               <div className="funfact-item go-visible">
                 <span className="number">12+</span>

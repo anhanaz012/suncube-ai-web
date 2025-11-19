@@ -1,17 +1,19 @@
 import MarketingAgencyWrapper from "@/app/(homes)/marketing-agency/_components/marketing-agency-wrapper";
 import ServiceDetailsApproach from "@/app/(service)/service-details/_components/service-details-approach";
+import defaultShape from "@/assets/imgs/shape/shape-13.webp";
+import gridImg from "@/assets/imgs/solutions/img13.png";
 import ApproachAboutArea from "@/components/approach/approach-about-area";
+import CurtainBasedImage from "@/components/common/curtain-image";
 import CustomCursor from "@/components/common/custom-cursor";
 import CtaAreaFour from "@/components/cta/cta-area-4";
 import FunFactAreaTwo from "@/components/fun-fact/fun-fact-area-2";
 import HeroThree from "@/components/hero/hero-three";
-import ParallaxImgTwo from "@/components/parallax-img/parallax-img-2";
-import ServiceAreaFive from "@/components/services/service-area-5";
+import ServiceAreaSix, {
+  ServiceItem,
+} from "@/components/services/service-area-6";
 import MainWrapper from "@/components/wrapper/main-wrapper";
 import Footer from "@/layout/footer/footer-one";
-import defaultShape from "@/assets/imgs/shape/shape-13.webp";
 import HeaderTwo from "@/layout/header/header-two";
-import gridImg from "@/assets/imgs/solutions/img13.png";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -19,7 +21,48 @@ export const metadata: Metadata = {
   description:
     "Redox is a marketing agency and portfolio template built with Next.js, designed to showcase your work and services effectively.",
 };
-
+const services: ServiceItem[] = [
+  {
+    number: "(001)",
+    title: "Predictive Load Forecasting",
+    services: [
+      "AI anticipates peak demand, solar variability, EV load surges, and weather shifts to balance the grid before stress occurs.",
+    ],
+    img: "/assets/imgs/solutions/img5.png",
+  },
+  {
+    number: "(002)",
+    title: "Bidirectional Power Routing",
+    services: [
+      "Automatically moves energy between homes, businesses, storage units, and the grid — ensuring stability with zero wastage.",
+    ],
+    img: "/assets/imgs/solutions/img6.png",
+  },
+  {
+    number: "(003)",
+    title: "Peer-to-Peer Energy Trading",
+    services: [
+      "Secure blockchain modules enable buying and selling of excess solar with full transparency and automated payment calculation. ",
+    ],
+    img: "/assets/imgs/solutions/img7.png",
+  },
+  {
+    number: "(004)",
+    title: "Grid Stabilization Algorithms",
+    services: [
+      "Maintains voltage, frequency, and load equilibrium using real-time AI — reducing outages, overloads, and curtailment.",
+    ],
+    img: "/assets/imgs/solutions/img8.png",
+  },
+  {
+    number: "(005)",
+    title: "Unified Distributed Resource Control",
+    services: [
+      "Connects inverters, smart meters, IoT devices, and batteries into one coordinated VPP with complete oversight.",
+    ],
+    img: "/assets/imgs/solutions/img9.png",
+  },
+];
 export default function SmartGrid() {
   return (
     <>
@@ -43,7 +86,10 @@ export default function SmartGrid() {
               description="Suncube AI links solar, storage, and smart devices into a unified Virtual Power Plant. AI predicts demand, balances energy, and automates trading — making the grid stable and efficient. "
               bottomText="AI-powered energy coordination for homes, businesses, and industries — unified into one intelligent power network. "
             />
-            <ParallaxImgTwo />
+            <CurtainBasedImage
+              src="/assets/imgs/solutions/img11.png"
+              alt="curtain-image"
+            />
             <FunFactAreaTwo
               buttonText={"The Challenge"}
               heading="Today’s Grid Wasn’t Built for Tomorrow’s Energy."
@@ -51,51 +97,12 @@ export default function SmartGrid() {
               infoText="Grid Reliability You Can Count On AI stabilizes distributed resources, prevents overloads, and keeps the network efficient, responsive, and VPP-ready — around the clock. "
               galleryImage={gridImg}
             />
-            <ServiceAreaFive
-              heading="The Intelligent Grid Layer Your Energy Network Needed"
-              description="Suncube AI interprets grid behavior in real time — understanding generation, demand, pricing, weather, and distributed energy availability. It coordinates thousands of decentralized systems as one Virtual Power Plant, ensuring optimal flow, transparent energy trade, and maximum renewable participation.Here’s how intelligence reshapes the future of grid energy:"
-              services={[
-                {
-                  id: "10",
-                  number: "(001)",
-                  title: "Predictive Load Forecasting",
-                  text: "AI anticipates peak demand, solar variability, EV load surges, and weather shifts to balance the grid before stress occurs.",
-                  image: "/assets/imgs/solutions/img5.png",
-                  link: "/solutions/commercial-solar",
-                },
-                {
-                  id: "11",
-                  number: "(002)",
-                  title: "Bidirectional Power Routing",
-                  text: "Automatically moves energy between homes, businesses, storage units, and the grid — ensuring stability with zero wastage.",
-                  image: "/assets/imgs/solutions/img6.png",
-                  link: "/solutions/commercial-solar",
-                },
-                {
-                  id: "12",
-                  number: "(003)",
-                  title: "Peer-to-Peer Energy Trading",
-                  text: "Secure blockchain modules enable buying and selling of excess solar with full transparency and automated payment calculation. ",
-                  image: "/assets/imgs/solutions/img7.png",
-                  link: "/solutions/commercial-solar",
-                },
-                {
-                  id: "13",
-                  number: "(004)",
-                  title: "Grid Stabilization Algorithms",
-                  text: "Maintains voltage, frequency, and load equilibrium using real-time AI — reducing outages, overloads, and curtailment.",
-                  image: "/assets/imgs/solutions/img8.png",
-                  link: "/solutions/commercial-solar",
-                },
-                {
-                  id: "14",
-                  number: "(005)",
-                  title: "Unified Distributed Resource Control",
-                  text: "Connects inverters, smart meters, IoT devices, and batteries into one coordinated VPP with complete oversight.",
-                  image: "/assets/imgs/solutions/img9.png",
-                  link: "/solutions/commercial-solar",
-                },
-              ]}
+            <div style={{ marginTop: "40px" }}></div>
+            <ServiceAreaSix
+              subtitle="The Suncube AI Solution"
+              title="The Intelligent Grid Layer Your Energy Network Needed"
+              services={services}
+              serviceDetailsLink="/service-details"
             />
             <ServiceDetailsApproach
               approachItems={[

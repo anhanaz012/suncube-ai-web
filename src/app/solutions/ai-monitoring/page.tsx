@@ -9,6 +9,9 @@ import CtaAreaFour from "@/components/cta/cta-area-4";
 import FunFactAreaTwo from "@/components/fun-fact/fun-fact-area-2";
 import HeroThree from "@/components/hero/hero-three";
 import ServiceAreaFive from "@/components/services/service-area-5";
+import ServiceAreaSix, {
+  ServiceItem,
+} from "@/components/services/service-area-6";
 import MainWrapper from "@/components/wrapper/main-wrapper";
 import Footer from "@/layout/footer/footer-one";
 import HeaderTwo from "@/layout/header/header-two";
@@ -19,6 +22,48 @@ export const metadata: Metadata = {
   description:
     "Redox is a marketing agency and portfolio template built with Next.js, designed to showcase your work and services effectively.",
 };
+const services: ServiceItem[] = [
+  {
+    number: "(001)",
+    title: "Real-Time Health Diagnostics",
+    services: [
+      "AI evaluates panel output, inverter temperature, voltage irregularities, and performance deviations with second-by-second precision. ",
+    ],
+    img: "/assets/imgs/solutions/img5.png",
+  },
+  {
+    number: "(002)",
+    title: "Predictive Failure Forecasting",
+    services: [
+      "Machine learning predicts cleaning needs, inverter faults, shading impacts, and component wear before they become critical.",
+    ],
+    img: "/assets/imgs/solutions/img6.png",
+  },
+  {
+    number: "(003)",
+    title: "Automated Fault Detection",
+    services: [
+      "Instant anomaly alerts for wiring issues, overheating, low yield, grid interruptions, and unexpected consumption patterns.",
+    ],
+    img: "/assets/imgs/solutions/img7.png",
+  },
+  {
+    number: "(004)",
+    title: "AI-Guided Maintenance Routing",
+    services: [
+      "Smart workflows auto-create service tickets, assign technicians, and accelerate resolution with accurate fault data. ",
+    ],
+    img: "/assets/imgs/solutions/img8.png",
+  },
+  {
+    number: "(005)",
+    title: "Unified Performance Oversight",
+    services: [
+      "Every asset—solar, batteries, inverters, sensors—is monitored under a single intelligent dashboard with complete transparency. ",
+    ],
+    img: "/assets/imgs/solutions/img9.png",
+  },
+];
 
 export default function AIMonitoring() {
   return (
@@ -43,8 +88,11 @@ export default function AIMonitoring() {
               description="Suncube AI analyzes every panel, inverter, and battery in real time. It detects anomalies, predicts breakdowns, and automates maintenance — ensuring uninterrupted power and maximum energy yield."
               bottomText="AI-driven diagnostics that monitor solar health, predict failures, and keep your system performing at peak efficiency — automatically."
             />
-                        <CurtainBasedImage src="/assets/imgs/solutions/img11.png" alt="curtain-image" />
-            
+            <CurtainBasedImage
+              src="/assets/imgs/solutions/img11.png"
+              alt="curtain-image"
+            />
+
             <FunFactAreaTwo
               buttonText={"The Challenge"}
               heading="Solar Performance Drops Long Before They’re Noticed."
@@ -52,51 +100,12 @@ export default function AIMonitoring() {
               infoText="Uptime achieved through Suncube AI’s predictive alerts that stop issues before they disrupt performance."
               galleryImage={gridImg}
             />
-            <ServiceAreaFive
-              heading="The Intelligent Grid Layer Your Energy Network Needed"
-              description="Suncube AI reads solar behavior in real time — analyzing generation, consumption, temperature patterns, weather impact, and component performance. It predicts faults, automates diagnosis, and coordinates maintenance intelligently, ensuring uninterrupted energy and maximum system longevity. Here’s how intelligence transforms solar reliability:"
-              services={[
-                {
-                  id: "10",
-                  number: "(001)",
-                  title: "Real-Time Health Diagnostics",
-                  text: "AI evaluates panel output, inverter temperature, voltage irregularities, and performance deviations with second-by-second precision. ",
-                  image: "/assets/imgs/solutions/img5.png",
-                  link: "/solutions/commercial-solar",
-                },
-                {
-                  id: "11",
-                  number: "(002)",
-                  title: "Predictive Failure Forecasting",
-                  text: "Machine learning predicts cleaning needs, inverter faults, shading impacts, and component wear before they become critical.",
-                  image: "/assets/imgs/solutions/img6.png",
-                  link: "/solutions/commercial-solar",
-                },
-                {
-                  id: "12",
-                  number: "(003)",
-                  title: "Automated Fault Detection",
-                  text: "Instant anomaly alerts for wiring issues, overheating, low yield, grid interruptions, and unexpected consumption patterns.",
-                  image: "/assets/imgs/solutions/img7.png",
-                  link: "/solutions/commercial-solar",
-                },
-                {
-                  id: "13",
-                  number: "(004)",
-                  title: "AI-Guided Maintenance Routing",
-                  text: "Smart workflows auto-create service tickets, assign technicians, and accelerate resolution with accurate fault data. ",
-                  image: "/assets/imgs/solutions/img8.png",
-                  link: "/solutions/commercial-solar",
-                },
-                {
-                  id: "14",
-                  number: "(005)",
-                  title: "Unified Performance Oversight",
-                  text: "Every asset—solar, batteries, inverters, sensors—is monitored under a single intelligent dashboard with complete transparency. ",
-                  image: "/assets/imgs/solutions/img9.png",
-                  link: "/solutions/commercial-solar",
-                },
-              ]}
+            <div style={{ marginTop: "40px" }}></div>
+            <ServiceAreaSix
+              subtitle="The Suncube AI Solution"
+              title="The Intelligent Monitoring Layer Your Solar System Needed"
+              services={services}
+              serviceDetailsLink="/service-details"
             />
             <ServiceDetailsApproach
               approachItems={[

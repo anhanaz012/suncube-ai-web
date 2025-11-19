@@ -4,7 +4,7 @@ import { useGSAP } from "@gsap/react";
 import { CustomEase, ScrollToPlugin, ScrollTrigger, SplitText } from "gsap/all";
 import { approachAnimation, approachAnimationTwo } from "@/utils/approach-anim";
 import { funFactAnimation } from "@/utils/fun-fact-anim";
-import { hoverRevealImageAnimation, scaleAnim } from "@/utils/img-anim";
+import { goFullAnimation, growAnimation, hoverRevealImageAnimation, scaleAnim } from "@/utils/img-anim";
 import {
   charAnimation,
   fadeAnimation,
@@ -21,9 +21,11 @@ export default function MarketingAgencyWrapper({ children }: Props) {
     const timer = setTimeout(() => {
       RRTitleAnimation();
       fadeAnimation();
+      goFullAnimation();
       hoverRevealImageAnimation();
       scaleAnim();
       approachAnimation();
+      growAnimation()
       funFactAnimation();
       approachAnimationTwo();
       charAnimation();
