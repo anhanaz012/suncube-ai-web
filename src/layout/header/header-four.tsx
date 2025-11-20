@@ -25,7 +25,7 @@ export default function HeaderFour() {
               </div>
               <div className="header__middel">
                 <p>
-                  Redox provides user centered <br />
+                  Suncube-AI provides user centered <br />
                   Ui and brand identities design <br />
                   [since 2012]
                 </p>

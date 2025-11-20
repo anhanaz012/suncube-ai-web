@@ -43,10 +43,10 @@ export default function HeroFour() {
             </div>
             <div className="title-wrapper fade-anim" data-delay="0.75">
               <h1 className="section-title font-thunder-regular">
-                Redox <sup>R</sup> <span className="bg"></span> design studio
+                Suncube-AI <sup>R</sup> <span className="bg"></span> design studio
               </h1>
               <p className="decisions">
-                Redox is the first and only branding studio for your real
+                Suncube-AI is the first and only branding studio for your real
                 exploration. you can realize about digital beautifully design.
               </p>
             </div>

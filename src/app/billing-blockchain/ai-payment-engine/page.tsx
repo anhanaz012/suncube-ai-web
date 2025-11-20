@@ -19,9 +19,9 @@ import ServiceDetailsApproach from "@/app/(service)/service-details/_components/
 import HeroThree from "@/components/hero/hero-three";
 
 export const metadata: Metadata = {
-  title: "Redox - Creative Agency and Portfolio Next js Template",
+  title: "Suncube-AI - Creative Agency and Portfolio Next js Template",
   description:
-    "Redox is a creative agency and portfolio template built with Next.js, designed to showcase your work and services effectively.",
+    "Suncube-AI is a creative agency and portfolio template built with Next.js, designed to showcase your work and services effectively.",
 };
 const services: ServiceItem[] = [
   {
@@ -72,14 +72,21 @@ export default function HomeCreativeAgencyPage() {
               </div>
             </div>
             <main>
-              <HeroThree />
+              <HeroThree
+                p1="AI–powered billing"
+                p2="engine for solar revenue"
+                p3="Real-time payments"
+                bottomText="SUNCUBE AI automates your entire billing flow"
+                description="From on-grid to hybrid systems,we optimize revenue instantly"
+                buttonText="Get Started"
+              />
+              <ActuallyArea p1="Why accurate billing" p2="needs " />
               <ServiceAreaSix
                 subtitle="Technology"
                 title="Powered by Advanced Technology"
                 services={services}
                 serviceDetailsLink="/service-details"
               />
-              <ActuallyArea p1="How It" p2="Works" />
               <ServiceAreaTwo showBottom={false} />
               <ServiceDetailsApproach
                 approachItems={[

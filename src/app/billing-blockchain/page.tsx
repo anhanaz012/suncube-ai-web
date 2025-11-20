@@ -20,9 +20,9 @@ import CreativeAgencyWrapper from "../(homes)/creative-agency/_components/creati
 import ServiceDetailsApproach from "../(service)/service-details/_components/service-details-approach";
 
 export const metadata: Metadata = {
-  title: "Redox - Creative Agency and Portfolio Next js Template",
+  title: "Suncube-AI - Creative Agency and Portfolio Next js Template",
   description:
-    "Redox is a creative agency and portfolio template built with Next.js, designed to showcase your work and services effectively.",
+    "Suncube-AI is a creative agency and portfolio template built with Next.js, designed to showcase your work and services effectively.",
 };
 const services: ServiceItem[] = [
   {

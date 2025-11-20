@@ -4,9 +4,9 @@ import HeaderEight from "@/layout/header/header-eight";
 import PortfolioHorizontalSlider from "@/components/portfolio-slider/portfolio-horizontal-slider";
 
 export const metadata: Metadata = {
-  title: "Redox - Portfolio Horizontal and Portfolio Next js Template",
+  title: "Suncube-AI - Portfolio Horizontal and Portfolio Next js Template",
   description:
-    "Redox is a agency and portfolio template built with Next.js, designed to showcase your work and services effectively.",
+    "Suncube-AI is a agency and portfolio template built with Next.js, designed to showcase your work and services effectively.",
 };
 
 export default function PortfolioHorizontalPage() {

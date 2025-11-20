@@ -14,9 +14,9 @@ import { TeamWrapperArea } from "@/components/team/team-area";
 import TeamListArea from "@/components/team/team-list-area";
 
 export const metadata: Metadata = {
-  title: "About Page - Redox Next js Template",
+  title: "About Page - Suncube-AI Next js Template",
   description:
-    "Redox is a agency and portfolio template built with Next.js, designed to showcase your work and services effectively.",
+    "Suncube-AI is a agency and portfolio template built with Next.js, designed to showcase your work and services effectively.",
 };
 
 export default function AboutPage() {

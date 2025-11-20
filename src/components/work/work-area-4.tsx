@@ -4,37 +4,37 @@ import Link from "next/link";
 
 const workData = [
   {
-    title: "Redox Digital Agency HTML Template",
+    title: "Suncube-AI Digital Agency HTML Template",
     tag: "WordPress, Themeforest",
     date: "(2025)",
     image: "/assets/imgs/project/image-30.webp",
   },
   {
-    title: "Redox Digital Agency Theme",
+    title: "Suncube-AI Digital Agency Theme",
     tag: "Themeforest",
     date: "(2025)",
     image: "/assets/imgs/project/image-31.webp",
   },
   {
-    title: "Redox Digital Agency HTML Template",
+    title: "Suncube-AI Digital Agency HTML Template",
     tag: "WordPress, Themeforest",
     date: "(2025)",
     image: "/assets/imgs/project/image-32.webp",
   },
   {
-    title: "Redox Digital Agency Theme",
+    title: "Suncube-AI Digital Agency Theme",
     tag: "Themeforest",
     date: "(2025)",
     image: "/assets/imgs/project/image-33.webp",
   },
   {
-    title: "Redox Digital Agency HTML Template",
+    title: "Suncube-AI Digital Agency HTML Template",
     tag: "WordPress, Themeforest",
     date: "(2025)",
     image: "/assets/imgs/project/image-34.webp",
   },
   {
-    title: "Redox Digital Agency Theme",
+    title: "Suncube-AI Digital Agency Theme",
     tag: "Themeforest",
     date: "(2025)",
     image: "/assets/imgs/project/image-35.webp",

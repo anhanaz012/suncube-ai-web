@@ -6,9 +6,9 @@ import WorkAreaSeven from "@/components/work/work-area-7";
 
 
 export const metadata: Metadata = {
-  title: "Redox - Portfolio Showcase and Portfolio Next js Template",
+  title: "Suncube-AI - Portfolio Showcase and Portfolio Next js Template",
   description:
-    "Redox is a agency and portfolio template built with Next.js, designed to showcase your work and services effectively.",
+    "Suncube-AI is a agency and portfolio template built with Next.js, designed to showcase your work and services effectively.",
 };
 
 export default function PortfolioShowcasePage() {

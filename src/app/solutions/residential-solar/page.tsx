@@ -17,9 +17,9 @@ import HeaderTwo from "@/layout/header/header-two";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Redox - Marketing Agency and Portfolio Next js Template",
+  title: "Suncube-AI - Marketing Agency and Portfolio Next js Template",
   description:
-    "Redox is a marketing agency and portfolio template built with Next.js, designed to showcase your work and services effectively.",
+    "Suncube-AI is a marketing agency and portfolio template built with Next.js, designed to showcase your work and services effectively.",
 };
 const services: ServiceItem[] = [
   {

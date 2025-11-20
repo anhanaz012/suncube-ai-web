@@ -10,9 +10,9 @@ import ServiceDetailsFeature from "./_components/service-details-feature";
 import ServiceDetailsValueArea from "./_components/service-details-value-area";
 
 export const metadata: Metadata = {
-  title: "Services Details Page - Redox Next js Template",
+  title: "Services Details Page - Suncube-AI Next js Template",
   description:
-    "Redox is a agency and portfolio template built with Next.js, designed to showcase your work and services effectively.",
+    "Suncube-AI is a agency and portfolio template built with Next.js, designed to showcase your work and services effectively.",
 };
 
 export default function ServiceDetailsPage() {

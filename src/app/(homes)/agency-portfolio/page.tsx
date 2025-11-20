@@ -8,9 +8,9 @@ import FooterFive from "@/layout/footer/footer-five";
 import CustomCursor from "@/components/common/custom-cursor";
 
 export const metadata: Metadata = {
-  title: "Redox - Agency Portfolio Next js Template",
+  title: "Suncube-AI - Agency Portfolio Next js Template",
   description:
-    "Redox is a agency portfolio template built with Next.js, designed to showcase your work and services effectively.",
+    "Suncube-AI is a agency portfolio template built with Next.js, designed to showcase your work and services effectively.",
 };
 
 

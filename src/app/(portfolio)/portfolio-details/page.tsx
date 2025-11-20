@@ -7,9 +7,9 @@ import PageTitle from "@/components/common/page-title";
 import PortfolioDetailsArea from "./_components/portfolio-details-area";
 
 export const metadata: Metadata = {
-  title: "Portfolio details Page - Redox Next js Template",
+  title: "Portfolio details Page - Suncube-AI Next js Template",
   description:
-    "Redox is a agency and portfolio template built with Next.js, designed to showcase your work and services effectively.",
+    "Suncube-AI is a agency and portfolio template built with Next.js, designed to showcase your work and services effectively.",
 };
 
 export default function PortfolioDetailsPage() {

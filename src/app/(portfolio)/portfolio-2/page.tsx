@@ -8,9 +8,9 @@ import { WorksWrapperTwo } from "@/components/work/work-area-2";
 import CustomCursor from "@/components/common/custom-cursor";
 
 export const metadata: Metadata = {
-  title: "Portfolio two Page - Redox Next js Template",
+  title: "Portfolio two Page - Suncube-AI Next js Template",
   description:
-    "Redox is a agency and portfolio template built with Next.js, designed to showcase your work and services effectively.",
+    "Suncube-AI is a agency and portfolio template built with Next.js, designed to showcase your work and services effectively.",
 };
 
 export default function PortfolioTwoPage() {

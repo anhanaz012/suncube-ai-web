@@ -14,7 +14,7 @@ interface PortfolioItem {
 const portfolioItems: PortfolioItem[] = [
   {
     imageSrc: "/assets/imgs/slider/protfolio-6.webp",
-    title: "Redox Digital Agency HTML Template",
+    title: "Suncube-AI Digital Agency HTML Template",
     tags: "WordPress, Themeforest",
     date: "2025",
   },
@@ -38,7 +38,7 @@ const portfolioItems: PortfolioItem[] = [
   },
   {
     imageSrc: "/assets/imgs/slider/protfolio-6.webp",
-    title: "Redox Digital Agency HTML Template",
+    title: "Suncube-AI Digital Agency HTML Template",
     tags: "WordPress, Themeforest",
     date: "2025",
   },

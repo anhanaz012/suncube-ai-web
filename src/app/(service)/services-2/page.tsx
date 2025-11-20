@@ -8,9 +8,9 @@ import ClientAreaFour from "@/components/client/client-area-4";
 import ServiceAreaSeven from "@/components/services/service-area-7";
 
 export const metadata: Metadata = {
-  title: "Services Page 2 - Redox Next js Template",
+  title: "Services Page 2 - Suncube-AI Next js Template",
   description:
-    "Redox is a agency and portfolio template built with Next.js, designed to showcase your work and services effectively.",
+    "Suncube-AI is a agency and portfolio template built with Next.js, designed to showcase your work and services effectively.",
 };
 
 export default function ServicesTwoPage() {

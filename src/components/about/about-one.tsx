@@ -13,7 +13,7 @@ export default function AboutOne() {
             <div className="section-title-wrapper">
               <div className="title-wrapper">
                 <h2 className="section-title font-instrumentsans-medium">
-                  Redox
+                  Suncube-AI
                 </h2>
               </div>
             </div>

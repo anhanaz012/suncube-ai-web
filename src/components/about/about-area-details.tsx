@@ -42,7 +42,7 @@ export default function AboutAreaDetails() {
             <div className="section-content">
               <div className="text-wrapper" data-direction="right">
                 <p className="text">
-                  Redox is the first and only creative agency for your real
+                  Suncube-AI is the first and only creative agency for your real
                   exploration. It’s one private place to save everything you can
                   realize about digital beautifully design.
                 </p>

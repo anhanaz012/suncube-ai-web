@@ -26,7 +26,7 @@ interface WorkItem {
 
 const workItems: WorkItem[] = [
   {
-    title: 'Redox Digital Agency HTML Template',
+    title: 'Suncube-AI Digital Agency HTML Template',
     image: project_1,
     tags: 'WordPress, Themeforest',
     date: '(2025)',
@@ -50,7 +50,7 @@ const workItems: WorkItem[] = [
     date: '(2022)',
   },
   {
-    title: 'Redox Digital Agency HTML Template',
+    title: 'Suncube-AI Digital Agency HTML Template',
     image: project_5,
     tags: 'WordPress, Themeforest',
     date: '(2025)',
@@ -86,7 +86,7 @@ const workItems: WorkItem[] = [
     date: '(2022)',
   },
   {
-    title: 'Redox Digital Agency HTML Template',
+    title: 'Suncube-AI Digital Agency HTML Template',
     image: project_11,
     tags: 'WordPress, Themeforest',
     date: '(2025)',

@@ -5,9 +5,9 @@ import HeaderSix from "@/layout/header/header-six";
 import CustomCursor from "@/components/common/custom-cursor";
 
 export const metadata: Metadata = {
-  title: "Redox - Prarallax Carousal and Portfolio Next js Template",
+  title: "Suncube-AI - Prarallax Carousal and Portfolio Next js Template",
   description:
-    "Redox is a agency and portfolio template built with Next.js, designed to showcase your work and services effectively.",
+    "Suncube-AI is a agency and portfolio template built with Next.js, designed to showcase your work and services effectively.",
 };
 
 export default function ParallaxCarousalPage() {

@@ -9,9 +9,9 @@ import ServiceContentWrapper from "@/components/services/service-content-wrapper
 import ServiceAreaFour from "@/components/services/service-area-4";
 
 export const metadata: Metadata = {
-  title: "Services Four Page - Redox Next js Template",
+  title: "Services Four Page - Suncube-AI Next js Template",
   description:
-    "Redox is a agency and portfolio template built with Next.js, designed to showcase your work and services effectively.",
+    "Suncube-AI is a agency and portfolio template built with Next.js, designed to showcase your work and services effectively.",
 };
 
 export default function ServicesFourPage() {

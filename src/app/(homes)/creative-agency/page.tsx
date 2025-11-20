@@ -19,9 +19,9 @@ import shape_2 from "@/assets/imgs/shape/shape-09.svg";
 import CustomCursor from "@/components/common/custom-cursor";
 
 export const metadata: Metadata = {
-  title: "Redox - Creative Agency and Portfolio Next js Template",
+  title: "Suncube-AI - Creative Agency and Portfolio Next js Template",
   description:
-    "Redox is a creative agency and portfolio template built with Next.js, designed to showcase your work and services effectively.",
+    "Suncube-AI is a creative agency and portfolio template built with Next.js, designed to showcase your work and services effectively.",
 };
 
 export default function HomeCreativeAgencyPage() {

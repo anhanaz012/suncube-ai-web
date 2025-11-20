@@ -16,9 +16,9 @@ import gallery_img from "@/assets/imgs/gallery/image-12.webp";
 import CustomCursor from "@/components/common/custom-cursor";
 
 export const metadata: Metadata = {
-  title: "Redox - Marketing Agency and Portfolio Next js Template",
+  title: "Suncube-AI - Marketing Agency and Portfolio Next js Template",
   description:
-    "Redox is a marketing agency and portfolio template built with Next.js, designed to showcase your work and services effectively.",
+    "Suncube-AI is a marketing agency and portfolio template built with Next.js, designed to showcase your work and services effectively.",
 };
 
 export default function HomeMarketingAgencyPage() {

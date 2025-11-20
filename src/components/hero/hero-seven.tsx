@@ -39,7 +39,7 @@ export default function HeroSeven() {
                     </video>
                   </div>
                   <p className="text">
-                    Redox is the first and only branding studio for your real
+                    Suncube-AI is the first and only branding studio for your real
                     exploration. You can realize digital beautifully designed.
                   </p>
                 </div>
