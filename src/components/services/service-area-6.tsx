@@ -96,7 +96,8 @@ export interface ServiceItem {
 export interface ServiceAreaSixProps {
   subtitle?: string;
   title?: string;
-  services: ServiceItem[];
+  showServices?: boolean;
+  services?: ServiceItem[];
   serviceDetailsLink?: string;
 }
 
@@ -104,6 +105,7 @@ export default function ServiceAreaSix({
   subtitle = "Technology",
   title = "Powered by Advanced Technology",
   services,
+  showServices = true,
   serviceDetailsLink = "/service-details",
 }: ServiceAreaSixProps) {
   return (
@@ -125,42 +127,48 @@ export default function ServiceAreaSix({
           </div>
 
           {/* Services */}
-          <div className="services-wrapper-box fade-anim">
-            <div className="services-wrapper-1">
-              {services.map((service, index) => (
-                <div className="service-box fade-anim" key={index}>
-                  <div className="count">
-                    <span className="number">{service.number}</span>
-                  </div>
+          {showServices && (
+            <>
+              <div className="services-wrapper-box fade-anim">
+                <div className="services-wrapper-1">
+                  {services &&
+                    services.map((service, index) => (
+                      <div className="service-box fade-anim" key={index}>
+                        <div className="count">
+                          <span className="number">{service.number}</span>
+                        </div>
 
-                  <div className="content">
-                    <h3 className="title">
-                      <Link href={serviceDetailsLink}>{service.title}</Link>
-                    </h3>
+                        <div className="content">
+                          <h3 className="title">
+                            <Link href={serviceDetailsLink}>
+                              {service.title}
+                            </Link>
+                          </h3>
 
-                    <ul className="service-list">
-                      {service.services.map((item, idx) => (
-                        <li key={idx}>
-                          <Link href={serviceDetailsLink}>{item}</Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
+                          <ul className="service-list">
+                            {service.services.map((item, idx) => (
+                              <li key={idx}>
+                                <Link href={serviceDetailsLink}>{item}</Link>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
 
-                  <div className="thumb">
-                    <Image
-                      className="grow"
-                      src={service.img}
-                      alt={service.title}
-                      width={545}
-                      height={265}
-                    />
-                  </div>
+                        <div className="thumb">
+                          <Image
+                            className="grow"
+                            src={service.img}
+                            alt={service.title}
+                            width={545}
+                            height={265}
+                          />
+                        </div>
+                      </div>
+                    ))}
                 </div>
-              ))}
-            </div>
-          </div>
-
+              </div>
+            </>
+          )}
         </div>
       </div>
     </section>

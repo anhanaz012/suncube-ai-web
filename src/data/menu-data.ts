@@ -31,11 +31,11 @@ const menuData: MenuItem[] = [
   },
   {
     title: "Billing & Blockchain",
-    href: "#",
+    href: "/billing-blockchain",
     children: [
-      { title: "AI Payment Engine", href: "/billing/ai-payment-engine" },
-      { title: "Blockchain Security", href: "/billing/blockchain-security" },
-      { title: "Transparency", href: "/billing/transparency" },
+      { title: "AI Payment Engine", href: "/billing-blockchain/ai-payment-engine" },
+      { title: "Blockchain Security", href: "/billing-blockchain/blockchain-security" },
+      { title: "Transparency", href: "/billing-blockchain/transparency" },
     ],
   },
   {

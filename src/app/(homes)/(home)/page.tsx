@@ -33,7 +33,7 @@ export default function HomePage() {
             <AboutOne />
             <VideoBox />
             <ActuallyArea />
-            <ServiceAreaTwo />
+            <ServiceAreaTwo showBottom = {true}/>
             <ServiceAreaThree />
             <ServiceDetailsApproach />
             <TestimonialArea />

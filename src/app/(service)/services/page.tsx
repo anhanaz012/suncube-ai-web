@@ -42,6 +42,7 @@ export default function ServicesPage() {
       img: "/assets/imgs/solutions/img3.png",
     },
   ];
+  
   return (
     <>
       {/* Header area start */}
