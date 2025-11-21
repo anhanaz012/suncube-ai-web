@@ -10,25 +10,20 @@ interface FeaturedWorkItem {
 
 const featuredWorks: FeaturedWorkItem[] = [
   {
-    title: "Saudi Venture Capital",
-    image: "/assets/imgs/gallery/image-47.webp",
-    tag: "Branding — 2014",
+    title: "Today's Energy Snapshot",
+    image: "/assets/imgs/solutions/img3.png",
+    tag: "Live Data",
   },
   {
-    title: "Saudi Lime Green",
-    image: "/assets/imgs/gallery/image-48.webp",
-    tag: "Branding — 2014",
+    title: "Total Revenue Update",
+    image: "/assets/imgs/solutions/img14.png",
+    tag: "Daily Earnings",
     thumbExtraClass: "mt--150",
   },
   {
-    title: "Wave Coxsheet",
-    image: "/assets/imgs/gallery/image-49.webp",
-    tag: "Branding — 2014",
-  },
-  {
-    title: "Padro Alex Garoat",
-    image: "/assets/imgs/gallery/image-50.webp",
-    tag: "Branding — 2014",
+    title: "Grid Units Sold",
+    image: "/assets/imgs/solutions/image.png",
+    tag: "Real Count",
   },
 ];
 

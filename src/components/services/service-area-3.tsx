@@ -1,16 +1,30 @@
-import Image from "next/image";
 import Link from "next/link";
-const services = [
+import { ReactNode } from "react";
+import Image from "next/image";
+
+export interface ServiceItem {
+  img: string;
+  title: string;
+  text: string;
+  delay?: string;
+  link?: string;
+}
+
+interface ServiceThreeWrapperAreaProps {
+  services?: ServiceItem[];
+}
+
+const defaultServices: ServiceItem[] = [
   {
     img: "/assets/imgs/gallery/image-13.webp",
     title: "Smart Installation",
-    text: "AI-assisted panel placement and grid integration for maximum energy capture, efficiency, and system stability — all installed with precision and minimal disruption. ",
+    text: "AI-assisted panel placement and grid integration for maximum energy capture, efficiency, and system stability — all installed with precision and minimal disruption.",
     delay: "0.45",
   },
   {
     img: "/assets/imgs/gallery/image-14.webp",
     title: "Real-time Monitoring",
-    text: "24/7 data surveillance powered by predictive analytics. Instantly track performance, detect issues early, and gain deep insight into system health — all in real time. ",
+    text: "24/7 data surveillance powered by predictive analytics. Instantly track performance, detect issues early, and gain deep insight into system health — all in real time.",
     delay: "0.60",
   },
   {
@@ -27,7 +41,10 @@ const services = [
   },
 ];
 
-export const ServiceThreeWrapperArea = () => {
+
+export const ServiceThreeWrapperArea = ({
+  services = defaultServices,
+}: ServiceThreeWrapperAreaProps) => {
   return (
     <div className="services-wrapper-3">
       {services.map((service, idx) => (
@@ -37,16 +54,28 @@ export const ServiceThreeWrapperArea = () => {
           key={idx}
         >
           <div className="thumb">
-            <Link href="/suncube-service-details">
-              <Image src={service.img} alt="image" width={110} height={110} />
+            <Link href={service.link ?? "/suncube-service-details"}>
+              <Image
+                src={service.img}
+                alt={service.title}
+                width={110}
+                height={110}
+              />
             </Link>
           </div>
+
           <div className="content">
             <h3 className="title">
-              <Link href="/suncube-service-details">{service.title}</Link>
+              <Link href={service.link ?? "/suncube-service-details"}>
+                {service.title}
+              </Link>
             </h3>
             <p className="text">{service.text}</p>
-            <Link href="/suncube-service-details" className="rr-btn-underline">
+
+            <Link
+              href={service.link ?? "/suncube-service-details"}
+              className="rr-btn-underline"
+            >
               Explore
             </Link>
           </div>
@@ -56,7 +85,26 @@ export const ServiceThreeWrapperArea = () => {
   );
 };
 
-export default function ServiceAreaThree() {
+interface ServiceAreaThreeProps {
+  title?: ReactNode;
+  description?: string;
+  buttonText?: string;
+  buttonLink?: string;
+  services?: ServiceItem[];
+}
+
+export default function ServiceAreaThree({
+  title = (
+    <>
+      Planned. Installed. <br />
+      Optimized. Perfected.
+    </>
+  ),
+  description = `From initial setup to automated energy optimization, Suncube AI delivers an end-to-end solar experience that’s intelligent, transparent, and effortless. Our AI-powered platform ensures that every stage of implementation — from planning to payments — runs smarter, cleaner, and more efficiently.`,
+  buttonText = "Discover more",
+  buttonLink = "/suncube-services",
+  services,
+}: ServiceAreaThreeProps) {
   return (
     <section className="service-area-3">
       <div className="container large">
@@ -65,29 +113,24 @@ export default function ServiceAreaThree() {
             <div className="section-title-wrapper">
               <div className="title-wrapper">
                 <h2 className="section-title font-sequelsans-romanbody rr_title_anim">
-                  Planned. Installed. <br />
-                  Optimized. Perfected.{" "}
+                  {title}
                   <span className="mb-14">
-                    <Link href="/suncube-services" className="rr-btn-group">
-                      <span className="b">Discover more</span>
+                    <Link href={buttonLink} className="rr-btn-group">
+                      <span className="b">{buttonText}</span>
                       <span className="c">
                         <i className="fa-solid fa-arrow-right"></i>
                       </span>
                     </Link>
                   </span>
                 </h2>
-                <p className="mt-4">
-                  From initial setup to automated energy optimization, Suncube
-                  AI delivers an end-to-end solar experience that’s intelligent,
-                  transparent, and effortless. Our AI-powered platform ensures
-                  that every stage of implementation — from planning to payments
-                  — runs smarter, cleaner, and more efficiently.{" "}
-                </p>
+
+                <p className="mt-4">{description}</p>
               </div>
             </div>
           </div>
+
           <div className="services-wrapper-box">
-            <ServiceThreeWrapperArea />
+            <ServiceThreeWrapperArea services={services} />
           </div>
         </div>
       </div>

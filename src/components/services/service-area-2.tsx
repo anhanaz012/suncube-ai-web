@@ -42,6 +42,7 @@ const defaultServices = [
   },
 ];
 
+
 export default function ServiceAreaTwo({
   services = defaultServices,
   image1 = gallery_1,

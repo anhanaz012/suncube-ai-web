@@ -3,7 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 import MainMenu from "./main-menu";
 import Image from "next/image";
-import logo from '@/assets/imgs/logo/logo01.png';
+import logo from "@/assets/imgs/logo/logo01.png";
 import icon from "@/assets/imgs/icon/icon-2.webp";
 import SideToggle from "@/components/common/side-toggle";
 
@@ -21,7 +21,10 @@ export default function HeaderTwo() {
                     src={logo}
                     className="normal-logo"
                     alt="Site Logo"
-                    style={{ height: "auto",minHeight:'140px',minWidth:'140px' }}
+                    style={{
+                      objectFit: "contain",
+                    }}
+                    // style={{ height: "auto",minHeight:'140px',minWidth:'140px' }}
                   />
                 </Link>
               </div>
@@ -37,7 +40,10 @@ export default function HeaderTwo() {
                 </Link>
               </div>
               <div className="header__navicon">
-                <button onClick={() => setIsMobileMenuOpen(true)} className="side-toggle">
+                <button
+                  onClick={() => setIsMobileMenuOpen(true)}
+                  className="side-toggle"
+                >
                   <Image src={icon} alt="image" />
                 </button>
               </div>

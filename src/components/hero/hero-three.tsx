@@ -41,7 +41,7 @@ Your panels don’t just work — they learn, adapt, and deliver maximum yield w
   buttonLink = "/contact-us",
 }: HeroThreeProps) {
   return (
-    <section className="hero-area-3">
+    <section className="hero-area-3" style={{marginTop:"80px"}}>
       <div className="container large">
         <div className="hero-area-3-inner">
           {/* Subtitle */}

@@ -27,10 +27,11 @@ const Header = () => {
                     src={logo}
                     className="normal-logo"
                     style={{
-                      minHeight: "140px",
-                      minWidth: "140px",
-                      maxHeight: "140px",
-                      maxWidth: "140px",
+                      minHeight: "50px",
+                      minWidth: "130px",
+                      maxHeight: "50px",
+                      maxWidth: "130px",
+                      objectFit: "contain",
                       border: "none !important",
                     }}
                     alt="Site Logo"
