@@ -16,25 +16,25 @@ interface ServiceThreeWrapperAreaProps {
 
 const defaultServices: ServiceItem[] = [
   {
-    img: "/assets/imgs/gallery/image-13.webp",
+    img: "/assets/imgs/gallery/img03.jpeg",
     title: "Smart Installation",
     text: "AI-assisted panel placement and grid integration for maximum energy capture, efficiency, and system stability — all installed with precision and minimal disruption.",
     delay: "0.45",
   },
   {
-    img: "/assets/imgs/gallery/image-14.webp",
+    img: "/assets/imgs/gallery/img04.jpeg",
     title: "Real-time Monitoring",
     text: "24/7 data surveillance powered by predictive analytics. Instantly track performance, detect issues early, and gain deep insight into system health — all in real time.",
     delay: "0.60",
   },
   {
-    img: "/assets/imgs/gallery/image-15.webp",
+    img: "/assets/imgs/gallery/img05.jpeg",
     title: "Smart Grid Integration",
     text: "Intelligent synchronization between energy production, battery storage, and grid systems — ensuring seamless power flow and optimized energy distribution.",
     delay: "0.75",
   },
   {
-    img: "/assets/imgs/gallery/image-16.webp",
+    img: "/assets/imgs/gallery/img06.jpeg",
     title: "Automated Payments",
     text: "Blockchain-backed automation streamlines your billing, transactions, and credit management — offering complete transparency with zero manual effort.",
     delay: "0.90",
@@ -76,7 +76,7 @@ export const ServiceThreeWrapperArea = ({
               href={service.link ?? "/suncube-service-details"}
               className="rr-btn-underline"
             >
-              Explore
+              Know more
             </Link>
           </div>
         </div>

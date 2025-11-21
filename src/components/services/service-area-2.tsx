@@ -1,9 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
-import gallery_1 from "@/assets/imgs/gallery/img1.jpeg";
-import gallery_2 from "@/assets/imgs/gallery/img2.jpeg";
+import gallery_1 from "@/assets/imgs/gallery/img01.jpeg";
+import gallery_2 from "@/assets/imgs/gallery/img02.jpeg";
+import { JSX } from "react";
 
-const defaultServices = [
+interface Service {
+  number: string;
+  title: JSX.Element;
+  text: string;
+  link?: string;
+}
+const defaultServices: Service[] = [
   {
     number: "001",
     title: (
@@ -52,7 +59,7 @@ export default function ServiceAreaTwo({
   image2 = gallery_2,
   bottomText1 = "A practical guide on how intelligent solar energy systems can transform any home or project...",
   bottomText2 = "If you’re ready to embrace smart energy solutions, continue scrolling; otherwise, click the link below...",
-  buttonText = "View All Work",
+  buttonText = "Know more",
   buttonLink = "/suncube-work",
   showBottom = true,
 }) {
