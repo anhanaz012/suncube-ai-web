@@ -13,10 +13,11 @@ import ClientSliderTwo from "@/components/client/client-area-2";
 import AwardArea from "@/components/award/award-area";
 import TeamArea from "@/components/team/team-area";
 import CtaAreaTwo from "@/components/cta/cta-area-2";
-import FooterTwo from "@/layout/footer/footer-two";
+// import FooterTwo from "@/layout/footer/footer-two";
 import shape from "@/assets/imgs/shape/shape-9.webp";
-import shape_2 from "@/assets/imgs/shape/shape-09.svg";
+// import shape_2 from "@/assets/imgs/shape/shape-09.svg";
 import CustomCursor from "@/components/common/custom-cursor";
+import Footer from "@/layout/footer/footer-one";
 
 export const metadata: Metadata = {
   title: "Suncube-AI - Creative Agency and Portfolio Next js Template",
@@ -56,7 +57,7 @@ export default function HomeCreativeAgencyPage() {
               <div className="mb--1">
                 <div className="circular-shape-wrapper">
                   <div className="shape-thumb">
-                    <Image src={shape_2} alt="image" />
+                    {/* <Image src={shape_2} alt="image" /> */}
                   </div>
                 </div>
               </div>

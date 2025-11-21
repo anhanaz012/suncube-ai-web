@@ -14,6 +14,7 @@ import CtaAreaThree from "@/components/cta/cta-area-3";
 import FooterTwo from "@/layout/footer/footer-two";
 import gallery_img from "@/assets/imgs/gallery/image-12.webp";
 import CustomCursor from "@/components/common/custom-cursor";
+import Footer from "@/layout/footer/footer-one";
 
 export const metadata: Metadata = {
   title: "Suncube-AI - Marketing Agency and Portfolio Next js Template",
