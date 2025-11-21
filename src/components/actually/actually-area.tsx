@@ -1,6 +1,6 @@
 export default function ActuallyArea({
   p1 = "Why Choose",
-  p2 = "Suncube AI"
+  p2 = "Suncube AI?"
 }) {
   return (
     <section className="actually-area">

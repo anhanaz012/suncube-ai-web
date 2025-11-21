@@ -347,11 +347,11 @@
 
 .works-wrapper-6 {
     display: grid;
-    gap: 85px 10px;
+    gap: 85px 20px;
     grid-template-columns: repeat(4, 1fr);
 
     @media #{$xxl} {
-        gap: 65px 10px;
+        gap: 65px 20px;
     }
 
     @media #{$lg} {
@@ -436,11 +436,7 @@
             overflow: hidden;
 
             .image {
-                overflow: hidden;
-                position: relative;
                 border-radius: 20px;
-                transform: scale(0.9);
-
                 img {
                     transform-origin: center;
                 }
@@ -454,12 +450,10 @@
 
         .content {
             margin-top: 24px;
-
             @media #{$lg} {
                 margin-top: 14px;
             }
         }
-
         .title {
             font-size: 20px;
             font-weight: 400;

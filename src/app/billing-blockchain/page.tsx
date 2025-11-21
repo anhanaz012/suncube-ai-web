@@ -18,6 +18,7 @@ import ServiceAreaSix, {
 } from "@/components/services/service-area-6";
 import CreativeAgencyWrapper from "../(homes)/creative-agency/_components/creative-agency-wrapper";
 import ServiceDetailsApproach from "../(service)/service-details/_components/service-details-approach";
+import Footer from "@/layout/footer/footer-one";
 
 export const metadata: Metadata = {
   title: "Suncube-AI - Creative Agency and Portfolio Next js Template",
@@ -135,7 +136,6 @@ export default function HomeCreativeAgencyPage() {
                 }}
                 infoText="AI-powered billing accuracy with secure, immutable blockchain records."
                 aboutText="Suncube AI delivers transparent billing, tamper-proof energy transactions, automated tariff calculations, and a security layer engineered for high-scale solar operations."
-                heroImage="https://www.example.com/your-image.jpg"
               />
 
               <ServiceAreaSix
@@ -179,7 +179,7 @@ export default function HomeCreativeAgencyPage() {
               />
               <ServiceAreaFour />
               <CtaAreaFour line1="Let's simplify" line2="your billing now" />
-              <FooterTwo />
+              <Footer />
             </main>
           </div>
         </CreativeAgencyWrapper>

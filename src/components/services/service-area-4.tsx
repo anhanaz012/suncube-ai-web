@@ -11,12 +11,12 @@ export type Service = {
 
 type IProps = {
   wrapperCls?: string;
-  services?: Service[]; // dynamic services list
-  imageSrc?: string; // dynamic image
-  imageAlt?: string; // dynamic alt
+  services?: Service[];
+  imageSrc?: string;
+  imageAlt?: string;
   imageWidth?: number;
   imageHeight?: number;
-  linesCount?: number; // number of vertical lines
+  linesCount?: number;
 };
 
 const DEFAULT_SERVICES: Service[] = [
@@ -62,7 +62,6 @@ const DEFAULT_SERVICES: Service[] = [
   },
 ];
 
-
 const ServiceAreaFour = ({
   wrapperCls = "",
   services = DEFAULT_SERVICES,
@@ -81,13 +80,11 @@ const ServiceAreaFour = ({
               {services.map((service, index) => (
                 <div className="service-box fade-anim" key={index}>
                   <span className="number">{service.number || "--"}</span>
-
-                  <h2 className="service-title" style={{color:'black'}}>
+                  <h2 className="service-title">
                     <Link href="/service-details">
                       {service.title || "Untitled Service"}
                     </Link>
                   </h2>
-
                   {service.price && (
                     <p
                       style={{

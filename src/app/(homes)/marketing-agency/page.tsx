@@ -54,7 +54,7 @@ export default function HomeMarketingAgencyPage() {
             <BlogArea />
             <CtaAreaThree />
           </main>
-          <FooterTwo />
+          <Footer />
         </MarketingAgencyWrapper>
       </MainWrapper>
     </>

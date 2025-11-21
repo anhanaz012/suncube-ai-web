@@ -64,7 +64,7 @@ export default function HomeCreativeAgencyPage() {
               <TeamArea />
               <CtaAreaTwo />
             </main>
-            <FooterTwo />
+            <Footer />
           </div>
         </CreativeAgencyWrapper>
       </MainWrapper>

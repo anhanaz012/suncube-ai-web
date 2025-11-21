@@ -11,7 +11,8 @@ const defaultServices = [
         AI Powered <br /> Solutions
       </>
     ),
-    text: "At Suncube AI, every ray of sunlight is analyzed...",
+    text: "At Suncube AI, every ray of sunlight is analyzed, predicted, and optimized in real time. Our proprietary machine-learning algorithms study performance patterns, forecast yield fluctuations, and auto-adjust system parameters to ensure peak output. The result — consistently higher energy production, lower losses, and a system that learns, adapts, and outperforms itself every single day.",
+    link: "/solutions",
   },
   {
     number: "002",
@@ -20,7 +21,8 @@ const defaultServices = [
         Blockchain <br /> Security
       </>
     ),
-    text: "We bring transparency and traceability to clean energy...",
+    text: "We bring transparency and traceability to clean energy. Each energy transaction, data point, and performance record is logged on an immutable blockchain ledger. This ensures total data integrity, eliminates tampering, and enables verifiable sustainability reporting. With Suncube’s blockchain-backed records, your energy becomes not just green — but genuinely trustworthy.",
+    link: "/billing-blockchain",
   },
   {
     number: "003",
@@ -29,7 +31,8 @@ const defaultServices = [
         Predictive <br /> Maintenance
       </>
     ),
-    text: "Our AI doesn’t just monitor — it predicts...",
+    text: "Our AI doesn’t just monitor — it predicts. Using real-time sensor data and historical trends, Suncube’s predictive maintenance engine identifies potential issues before they affect system performance. Get proactive alerts, actionable insights, and automated maintenance schedules — maximizing uptime, reducing costs, and extending the lifespan of your assets without ever lifting a finger.",
+    link: "/solutions/ai-monitoring",
   },
   {
     number: "004",
@@ -38,10 +41,10 @@ const defaultServices = [
         Carbon Footprint <br /> Tracking
       </>
     ),
-    text: "Track your sustainability progress with live CO₂...",
+    text: "Track your sustainability progress with live CO₂ offset analytics. Our intelligent dashboards quantify exactly how much carbon your solar systems are saving and translate that into measurable environmental impact. Whether you’re a homeowner or a global enterprise, Suncube helps you visualize your green contribution — making every kilowatt count toward a cleaner future.",
+    link: "/solutions/cloud-dashboard",
   },
 ];
-
 
 export default function ServiceAreaTwo({
   services = defaultServices,
@@ -51,7 +54,7 @@ export default function ServiceAreaTwo({
   bottomText2 = "If you’re ready to embrace smart energy solutions, continue scrolling; otherwise, click the link below...",
   buttonText = "View All Work",
   buttonLink = "/suncube-work",
-  showBottom = true
+  showBottom = true,
 }) {
   return (
     <section className="service-area-2">
@@ -62,7 +65,7 @@ export default function ServiceAreaTwo({
               {services.map((service) => (
                 <Link
                   className="fade-anim"
-                  href="/service-suncube"
+                  href={service.link ?? "/suncube-service-details"}
                   key={service.number}
                 >
                   <div className="service-box-wrapper">

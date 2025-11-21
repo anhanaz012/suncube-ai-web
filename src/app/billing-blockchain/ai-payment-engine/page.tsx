@@ -1,6 +1,5 @@
 import shape from "@/assets/imgs/shape/shape-9.webp";
 import ActuallyArea from "@/components/actually/actually-area";
-import HeroTwo from "@/components/hero/hero-two";
 import ServiceAreaTwo from "@/components/services/service-area-2";
 import MainWrapper from "@/components/wrapper/main-wrapper";
 import FooterTwo from "@/layout/footer/footer-two";
@@ -8,18 +7,19 @@ import HeaderTwo from "@/layout/header/header-two";
 import { Metadata } from "next";
 import Image from "next/image";
 // import shape_2 from "@/assets/imgs/shape/shape-09.svg";
+import CreativeAgencyWrapper from "@/app/(homes)/creative-agency/_components/creative-agency-wrapper";
+import PortfolioThreeWorkArea from "@/app/(portfolio)/portfolio-3/_components/portfolio-three-area";
+import ServiceDetailsApproach from "@/app/(service)/service-details/_components/service-details-approach";
 import CustomCursor from "@/components/common/custom-cursor";
+import PageTitle from "@/components/common/page-title";
 import CtaAreaFour from "@/components/cta/cta-area-4";
+import HeroThree from "@/components/hero/hero-three";
+import ServiceAreaThree from "@/components/services/service-area-3";
 import ServiceAreaFour, { Service } from "@/components/services/service-area-4";
 import ServiceAreaSix, {
   ServiceItem,
 } from "@/components/services/service-area-6";
-import CreativeAgencyWrapper from "@/app/(homes)/creative-agency/_components/creative-agency-wrapper";
-import ServiceDetailsApproach from "@/app/(service)/service-details/_components/service-details-approach";
-import HeroThree from "@/components/hero/hero-three";
-import PageTitle from "@/components/common/page-title";
-import PortfolioThreeWorkArea from "@/app/(portfolio)/portfolio-3/_components/portfolio-three-area";
-import ServiceAreaThree from "@/components/services/service-area-3";
+import Footer from "@/layout/footer/footer-one";
 
 export const metadata: Metadata = {
   title: "Suncube-AI - Creative Agency and Portfolio Next js Template",
@@ -64,7 +64,6 @@ const defaultServices = [
     text: "Operators struggle without clear logs of units sold, timestamps, or payout data. AI brings real-time tracking and transparent billing.",
   },
 ];
-
 const DEFAULT_SERVICES: Service[] = [
   {
     number: "01",
@@ -127,111 +126,103 @@ const DEFAULT_SERVICES: Service[] = [
     ],
   },
 ];
-
 const updatedServices: Service[] = [
   {
     number: "01",
-    title: "Data Security",
+    title: "Customer Benefits",
     features: [
-      "256-bit encrypted storage",
-      "Encrypted API communication",
-      "Secure data exchange",
-      "Cryptographic energy logs",
-      "Fraud safe data pipeline",
+      "Clear revenue tracking",
+      "No calculation errors",
+      "Real-time transparency",
+      "Instant billing updates",
     ],
   },
   {
     number: "02",
-    title: "Role Control",
+    title: "Technician Benefits",
     features: [
-      "Role-based system access",
-      "Admin / Tech / User rights",
-      "Permission-gated features",
-      "Secure login enforcement",
-      "Controlled data visibility",
+      "Fewer billing disputes",
+      "Easy revenue tracking",
+      "No manual reporting",
+      "Automated data sync",
     ],
   },
   {
     number: "03",
-    title: "Smart Ledger",
+    title: "Admin Benefits",
     features: [
-      "Smart-contract validation",
-      "Immutable blockchain entries",
-      "Audit-ready activity logs",
-      "Anti-fraud verification",
-      "Automated transaction checks",
+      "Automated settlements",
+      "Immutable blockchain logs",
+      "Full system visibility",
+      "Multi-site monitoring",
     ],
   },
 ];
 const services: ServiceItem[] = [
   {
     number: "(01)",
-    title: "Predictive Optimization",
+    title: "Data Security",
     services: [
-      "AI analyzes sunlight patterns, shading, and local weather to adapt output dynamically — making every ray count, even on cloudy days.",
+      "256-bit encrypted storage",
+      "Encrypted API communication",
+      "Secure data exchange",
+      "Cryptographic energy logs",
+      "Fraud-safe data pipeline",
     ],
     img: "/assets/imgs/solutions/img5.png",
   },
   {
     number: "(02)",
-    title: "Smart Power Routing",
+    title: "Role Control",
     services: [
-      "Automatically directs energy between your home, storage, and the grid — ensuring zero wastage and total control.",
+      "Role-based system access",
+      "Admin / Tech / User rights",
+      "Permission-gated features",
+      "Secure login enforcement",
+      "Controlled data visibility",
     ],
     img: "/assets/imgs/solutions/img6.png",
   },
   {
     number: "(03)",
-    title: "Predictive Maintenance",
+    title: "Smart Ledger",
     services: [
-      "Detects inefficiencies, dust build-up, or component wear before performance drops — preventing surprises and saving costs",
+      "Smart-contract validation",
+      "Immutable blockchain entries",
+      "Audit-ready activity logs",
+      "Anti-fraud verification",
+      "Automated transaction checks",
     ],
     img: "/assets/imgs/solutions/img7.png",
   },
-  {
-    number: "(04)",
-    title: "AI + Blockchain Billing",
-    services: [
-      "Tracks, audits, and secures your energy trades with automated, tamper-proof precision.",
-    ],
-    img: "/assets/imgs/solutions/img8.png",
-  },
-  {
-    number: "(05)",
-    title: "Sustainability Insights",
-    services: [
-      "Converts your clean energy data into measurable impact — showing exactly how your home powers a greener planet.",
-    ],
-    img: "/assets/imgs/solutions/img9.png",
-  },
 ];
+
 const services3 = [
   {
     img: "/assets/imgs/gallery/image-13.webp",
-    title: "Smart Installation",
-    text: "AI-assisted panel placement and grid integration for maximum energy capture, efficiency, and system stability — all installed with precision and minimal disruption.",
+    title: "Grid APIs",
+    text: "Our engine connects directly with utility and operator APIs, enabling synchronized energy data and live tariff updates for accurate billing.",
     delay: "0.45",
   },
   {
     img: "/assets/imgs/gallery/image-14.webp",
-    title: "Real-time Monitoring",
-    text: "24/7 data surveillance powered by predictive analytics. Instantly track performance, detect issues early, and gain deep insight into system health — all in real time.",
+    title: "Universal Inverters",
+    text: "Compatible with all major inverter brands, our system reads performance data, sale units, and event logs without extra hardware changes.",
     delay: "0.60",
   },
   {
     img: "/assets/imgs/gallery/image-15.webp",
-    title: "Smart Grid Integration",
-    text: "Intelligent synchronization between energy production, battery storage, and grid systems — ensuring seamless power flow and optimized energy distribution.",
+    title: "Cloud System",
+    text: "Built on scalable cloud infrastructure, Suncube manages high-volume sites, real-time updates, and multi-device access effortlessly.",
     delay: "0.75",
   },
   {
     img: "/assets/imgs/gallery/image-16.webp",
-    title: "Automated Payments",
-    text: "Blockchain-backed automation streamlines your billing, transactions, and credit management — offering complete transparency with zero manual effort.",
+    title: "Easy Data Export",
+    text: "Export billing and energy data in CSV, Excel, or Webhooks formats, enabling smooth integration with ERPs, accounting tools, and external dashboards.",
     delay: "0.90",
   },
 ];
-
 export default function HomeCreativeAgencyPage() {
   return (
     <>
@@ -302,7 +293,7 @@ export default function HomeCreativeAgencyPage() {
               <div style={{ marginTop: "40px" }}></div>
               <ServiceAreaSix
                 subtitle="The Suncube AI Solution"
-                title="Your Solar, Supercharged with Intelligence"
+                title="Advanced security compliance"
                 services={services}
                 serviceDetailsLink="/service-details"
               />
@@ -317,17 +308,18 @@ export default function HomeCreativeAgencyPage() {
                 buttonText="Know More"
                 description=""
               />
-              <ServiceAreaFour services={updatedServices} />
-              <CtaAreaFour
-                line1="Upgrade Your"
-                line2="Facility with Suncube "
+              <ServiceAreaSix
+                subtitle="Benefits"
+                title="Benefits that power every solar stakeholder"
+                serviceDetailsLink="/service-details"
               />
-              <FooterTwo />
+              <ServiceAreaFour services={updatedServices} />
+              <CtaAreaFour line1="Let's modernize" line2="your energy ops" />
+              <Footer />
             </main>
           </div>
         </CreativeAgencyWrapper>
       </MainWrapper>
-      {/* Main wrapper end */}
     </>
   );
 }
