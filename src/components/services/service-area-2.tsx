@@ -114,10 +114,18 @@ export default function ServiceAreaTwo({
                   </div>
 
                   <div className="btn-wrapper">
-                    <Link href={buttonLink} className="rr-btn btn-border-white">
+                    <Link
+                      href={buttonLink}
+                      className="rr-btn btn-border-white"
+                      style={{ backgroundColor: "black", color: "white" }}
+                    >
                       <span className="btn-wrap">
-                        <span className="text-one">{buttonText}</span>
-                        <span className="text-two">{buttonText}</span>
+                        <span className="text-one" style={{ color: "white" }}>
+                          {buttonText}
+                        </span>
+                        <span className="text-two" style={{ color: "white" }}>
+                          {buttonText}
+                        </span>
                       </span>
                     </Link>
                   </div>
@@ -138,6 +146,7 @@ export default function ServiceAreaTwo({
                     />
                   </div>
                 </div>
+                <div style={{ marginBottom: "40px" }}></div>
               </div>
             </div>
           </div>

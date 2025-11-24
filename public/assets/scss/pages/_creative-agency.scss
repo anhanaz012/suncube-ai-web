@@ -11,7 +11,8 @@
         .rr-btn {
 
             &::before {
-                background-color: var(--black);
+                background-color: purple ;
+                // background-color: var(--black);
             }
 
             &.btn-border-white {
@@ -64,7 +65,8 @@
 
     .rr-btn {
         &::before {
-            background-color: #FCF7F3;
+            background-color: yellow;
+            // background-color: #FCF7F3;
         }
     }
 }

@@ -25,13 +25,16 @@ export default function SideToggle({ isOpen, onSideToggle }: IProps) {
       <aside className="fix">
         <div className={`side-info ${isOpen ? "info-open" : ""}`}>
           <div className="side-info-content">
-            <div className="offset-widget offset-header" style={{alignItems:'center'}}>
+            <div
+              className="offset-widget offset-header"
+              style={{ alignItems: "center" }}
+            >
               <div className="offset-logo">
                 <Link href="/">
                   <Image
                     src={logo}
                     alt="site logo"
-                    style={{ height: "auto",minHeight:'150px',minWidth:'150px' }}
+                    style={{ height: "auto" }}
                   />
                 </Link>
               </div>
@@ -110,9 +113,7 @@ export default function SideToggle({ isOpen, onSideToggle }: IProps) {
                     <i className="fa-solid fa-envelope"></i>
                   </span>
                   <span className="text">
-                    <a href="mailto:info@suncube.ai">
-                      info@suncube.ai
-                    </a>
+                    <a href="mailto:info@suncube.ai">info@suncube.ai</a>
                   </span>
                 </div>
                 <div className="contact-item">
