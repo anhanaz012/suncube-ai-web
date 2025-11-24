@@ -57,7 +57,7 @@
     .header__nav {
         border: 1px solid var(--border);
         border-radius: 60px;
-        padding: 0 13px;
+        padding:0;
 
         @media #{$lg} {
             padding: 0;
@@ -68,7 +68,7 @@
     .main-menu li a {
         font-size: 16px;
         font-weight: 400;
-        padding: 21px 17px;
+        padding:15px 12px;
 
         &:hover {
             color: var(--action);
@@ -93,12 +93,10 @@
 
     .rr-btn {
         font-size: 16px;
-        padding: 22px 38px;
+        padding: 15px 20px;
         letter-spacing: -0.04em;
-
         @media #{$lg} {
-            padding: 17px 33px;
-
+        padding: 15px 20px;
         }
     }
 
@@ -334,8 +332,6 @@
         background-color: #1D1C1C;
     }
 }
-
-
 /* header area 4 style  */
 .header-area-4 {
     position: absolute;
@@ -430,7 +426,6 @@
 
 
 }
-
 /* header area 5 style  */
 .header-area-5 {
     position: absolute;
@@ -522,7 +517,6 @@
     }
 
 }
-
 /* header area 6 style  */
 .header-area-6 {
     position: absolute;
@@ -619,7 +613,6 @@
 
 
 }
-
 /* header area 8 style  */
 .header-area-7 {
     position: absolute;
@@ -707,7 +700,6 @@
     }
 
 }
-
 /* header area 8 style  */
 .header-area-8 {
     position: absolute;

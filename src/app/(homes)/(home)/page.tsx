@@ -33,13 +33,13 @@ export default function HomePage() {
             <AboutOne />
             <VideoBox />
             <ActuallyArea />
-            <ServiceAreaTwo showBottom = {true}/>
+            <ServiceAreaTwo showBottom={true} />
             <ServiceAreaThree />
             <ServiceDetailsApproach />
             <TestimonialArea />
             <ProductivityArea />
             <CtaArea />
-            <Footer/>
+            <Footer />
           </main>
         </DigitalAgencyWrapper>
       </MainWrapper>
