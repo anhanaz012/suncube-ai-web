@@ -45,13 +45,21 @@ export default function HomeDesignAgencyPage() {
             {/* Hero area end */}
 
             {/* award area start */}
+<<<<<<< HEAD
             {/* <AwardAreaTwo /> */}
+=======
+            <AwardAreaTwo />
+>>>>>>> c684cb6b0ccd4cd31c1810b14f395d143d96d1dd
             {/* award area end */}
 
             {/* service area start */}
             <ServiceAreaFour />
             {/* service area end */}
+<<<<<<< HEAD
            
+=======
+
+>>>>>>> c684cb6b0ccd4cd31c1810b14f395d143d96d1dd
             {/* capability area start */}
             <CapabilitiesArea />
             {/* capability area end */}
