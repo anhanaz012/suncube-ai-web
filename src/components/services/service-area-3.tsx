@@ -1,0 +1,137 @@
+import Link from "next/link";
+import { ReactNode } from "react";
+import Image from "next/image";
+
+export interface ServiceItem {
+  img: string;
+  title: string;
+  text: string;
+  delay?: string;
+  link?: string;
+}
+
+interface ServiceThreeWrapperAreaProps {
+  services?: ServiceItem[];
+}
+
+const defaultServices: ServiceItem[] = [
+  {
+    img: "/assets/imgs/gallery/img03.jpeg",
+    title: "Smart Installation",
+    text: "AI-assisted panel placement and grid integration for maximum energy capture, efficiency, and system stability — all installed with precision and minimal disruption.",
+    delay: "0.45",
+  },
+  {
+    img: "/assets/imgs/gallery/img04.jpeg",
+    title: "Real-time Monitoring",
+    text: "24/7 data surveillance powered by predictive analytics. Instantly track performance, detect issues early, and gain deep insight into system health — all in real time.",
+    delay: "0.60",
+  },
+  {
+    img: "/assets/imgs/gallery/img05.jpeg",
+    title: "Smart Grid Integration",
+    text: "Intelligent synchronization between energy production, battery storage, and grid systems — ensuring seamless power flow and optimized energy distribution.",
+    delay: "0.75",
+  },
+  {
+    img: "/assets/imgs/gallery/img06.jpeg",
+    title: "Automated Payments",
+    text: "Blockchain-backed automation streamlines your billing, transactions, and credit management — offering complete transparency with zero manual effort.",
+    delay: "0.90",
+  },
+];
+
+
+export const ServiceThreeWrapperArea = ({
+  services = defaultServices,
+}: ServiceThreeWrapperAreaProps) => {
+  return (
+    <div className="services-wrapper-3">
+      {services.map((service, idx) => (
+        <div
+          className="service-box fade-anim"
+          data-delay={service.delay}
+          key={idx}
+        >
+          <div className="thumb">
+            <Link href={service.link ?? "/suncube-service-details"}>
+              <img
+                src={service.img}
+                alt={service.title}
+              />
+            </Link>
+          </div>
+
+          <div className="content">
+            <h3 className="title">
+              <Link href={service.link ?? "/suncube-service-details"}>
+                {service.title}
+              </Link>
+            </h3>
+            <p className="text">{service.text}</p>
+
+            <Link
+              href={service.link ?? "/suncube-service-details"}
+              className="rr-btn-underline"
+            >
+              Know more
+            </Link>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+interface ServiceAreaThreeProps {
+  title?: ReactNode;
+  description?: string;
+  buttonText?: string;
+  buttonLink?: string;
+  services?: ServiceItem[];
+}
+
+export default function ServiceAreaThree({
+  title = (
+    <>
+      Planned. Installed. <br />
+      Optimized. Perfected.
+    </>
+  ),
+  description = `From initial setup to automated energy optimization, Suncube AI delivers an end-to-end solar experience that’s intelligent, transparent, and effortless. Our AI-powered platform ensures that every stage of implementation — from planning to payments — runs smarter, cleaner, and more efficiently.`,
+  buttonText = "Discover more",
+  buttonLink = "/suncube-services",
+  services,
+}: ServiceAreaThreeProps) {
+  return (
+    <section className="service-area-3">
+      <div className="container large">
+        <div className="service-area-3-inner section-spacing-top">
+          <div className="section-header fade-anim">
+            <div className="section-title-wrapper">
+              <div className="title-wrapper">
+                <h2 className="section-title font-sequelsans-romanbody rr_title_anim">
+                  {title}
+                  <span className="mb-14">
+                    <Link href={buttonLink} className="rr-btn-group">
+                      <span className="b">{buttonText}</span>
+                      <span className="c">
+                        <i className="fa-solid fa-arrow-right"></i>
+                      </span>
+                    </Link>
+                  </span>
+                </h2>
+
+                <p className="mt-4">{description}</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="services-wrapper-box">
+            <ServiceThreeWrapperArea services={services} />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

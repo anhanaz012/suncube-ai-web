@@ -1,0 +1,36 @@
+"use client";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { CustomEase, ScrollToPlugin, ScrollTrigger, SplitText } from "gsap/all";
+import { approachAnimation, approachAnimationTwo } from "@/utils/approach-anim";
+import { funFactAnimation } from "@/utils/fun-fact-anim";
+import { goFullAnimation, growAnimation, hoverRevealImageAnimation, scaleAnim } from "@/utils/img-anim";
+import {
+  charAnimation,
+  fadeAnimation,
+  RRTitleAnimation,
+} from "@/utils/title-anim";
+
+type Props = {
+  children: React.ReactNode;
+};
+
+export default function MarketingAgencyWrapper({ children }: Props) {
+  useGSAP(() => {
+    gsap.registerPlugin(CustomEase, ScrollToPlugin, SplitText, ScrollTrigger);
+    const timer = setTimeout(() => {
+      RRTitleAnimation();
+      fadeAnimation();
+      goFullAnimation();
+      hoverRevealImageAnimation();
+      scaleAnim();
+      approachAnimation();
+      growAnimation()
+      funFactAnimation();
+      approachAnimationTwo();
+      charAnimation();
+    }, 100);
+    return () => clearTimeout(timer);
+  }, {});
+  return children;
+}

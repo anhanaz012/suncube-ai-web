@@ -1,0 +1,106 @@
+// import Image from "next/image";
+// import Link from "next/link";
+
+// export default function CtaAreaFour() {
+//   return (
+//     <section className="cta-area-4">
+//       <div className="container large">
+//         <div className="cta-area-4-inner section-spacing-top">
+//           <div className="section-header fade-anim" data-direction="left">
+//             <div className="section-title-wrapper">
+//               <div className="title-wrapper">
+//                 <h2 className="section-title font-bdogrotesk-regular">
+//                   <Link href="/contact">
+//                     Bring Suncube AI
+//                     <span className="icon">
+//                       <Image
+//                         className="first"
+//                         src="/assets/imgs/icon/icon-9.webp"
+//                         alt="icon"
+//                         width={101}
+//                         height={101}
+//                         style={{height:'auto'}}
+//                       />
+//                       <Image
+//                         className="second"
+//                         src="/assets/imgs/icon/icon-9.webp"
+//                         alt="icon"
+//                         width={101}
+//                         height={101}
+//                         style={{height:'auto'}}
+//                       />
+//                     </span>{" "}
+//                     <br />
+//                     to your Home.
+//                   </Link>
+//                 </h2>
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// }
+import Image, { StaticImageData } from "next/image";
+import Link from "next/link";
+
+interface CtaAreaFourProps {
+  linkUrl?: string;
+  line1?: string;       // "Bring Suncube AI"
+  line2?: string;       // "to your Home."
+  icon1?: string | StaticImageData;
+  icon2?: string | StaticImageData;
+  iconWidth?: number;
+  iconHeight?: number;
+}
+
+export default function CtaAreaFour({
+  linkUrl = "/contact-us",
+  line1 = "Bring Suncube AI",
+  line2 = "to your Home.",
+  icon1 = "/assets/imgs/icon/icon-9.webp",
+  icon2 = "/assets/imgs/icon/icon-9.webp",
+  iconWidth = 101,
+  iconHeight = 101,
+}: CtaAreaFourProps) {
+  return (
+    <section className="cta-area-4">
+      <div className="container large">
+        <div className="cta-area-4-inner section-spacing-top">
+          <div className="section-header fade-anim" data-direction="left">
+            <div className="section-title-wrapper">
+              <div className="title-wrapper">
+                <h2 className="section-title font-bdogrotesk-regular">
+                  <Link href={linkUrl}>
+                    {line1}
+                    <span className="icon">
+                      <Image
+                        className="first"
+                        src={icon1}
+                        alt="icon"
+                        width={iconWidth}
+                        height={iconHeight}
+                        style={{ height: "auto" }}
+                      />
+                      <Image
+                        className="second"
+                        src={icon2}
+                        alt="icon"
+                        width={iconWidth}
+                        height={iconHeight}
+                        style={{ height: "auto" }}
+                      />
+                    </span>
+                    <br />
+                    {line2}
+                  </Link>
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

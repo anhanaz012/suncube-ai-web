@@ -1,0 +1,45 @@
+import Link from "next/link";
+
+export default function AboutOne() {
+  return (
+    <section className="about-area">
+      <div className="container large">
+        <div className="about-area-inner section-spacing">
+          <div className="section-content">
+            <div className="shape-1"></div>
+            <div className="shape-2"></div>
+            <div className="shape-3"></div>
+            <div className="shape-4"></div>
+            <div className="section-title-wrapper">
+              <div className="title-wrapper">
+                <h2 className="section-title font-instrumentsans-medium">
+                  Suncube-AI
+                </h2>
+              </div>
+            </div>
+            <div className="text-wrapper">
+              <p className="text">
+                We envision a world where clean energy is not just accessible,
+                but intelligent. Where every solar panel, every battery, and
+                every home works together in perfect harmony, powered by AI that
+                understands and optimizes for both human needs and planetary
+                health
+              </p>
+            </div>
+            <div className="btn-wrapper ">
+              <Link
+                href="/learn-about-us"
+                className="rr-btn  btn-text-fli hover-bg-theme"
+              >
+                <span className="btn-wrap">
+                  <span className="text-one">Learn More</span>
+                  <span className="text-two">Learn More</span>
+                </span>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

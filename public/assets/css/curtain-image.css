@@ -1,0 +1,25 @@
+.curtain-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  gap: 20px;
+  justify-content: center;
+}
+
+.curtain-img {
+  height: 90vh;
+  width: 500px;
+  max-width: 100%;
+  object-fit: cover;
+  transition: width 3s ease-in-out;
+}
+
+.curtain-wrapper p {
+  color: white;
+  font-size: 17px;
+  user-select: none;
+  margin: 0 8px;
+}

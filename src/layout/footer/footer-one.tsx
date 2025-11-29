@@ -1,0 +1,130 @@
+"use client";
+import Link from "next/link";
+import React, { useState } from "react";
+import Image from "next/image";
+import logo from "@/assets/imgs/logo/logo01.png";
+import icon from "@/assets/imgs/icon/icon-1.webp";
+
+const Footer: React.FC = () => {
+  const [email, setEmail] = useState("");
+
+  const handleSubscribe = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    alert(`Subscribed with email: ${email}`);
+    setEmail('')
+  };
+
+  return (
+    <footer className="footer-area">
+      <div className="container large">
+        <div className="footer-top-inner" style={{
+          alignItems:'center !important',
+        }}>
+          <div className="footer-logo">
+            <Link href="/">
+              <Image
+                src={logo}
+                alt="site-logo"
+                style={{ height: "auto",objectFit:'contain' }}
+              />
+            </Link>
+          </div>
+          <div className="info-text">
+            <div className="text-wrapper">
+              <p className="text">
+                Suncube AI provides intelligent, AI-powered solar energy solutions to power homes, businesses, and communities sustainably.
+              </p>
+            </div>
+            <div className="info-link">
+              <a href="mailto:info@solarsystem.com">info@suncubeai.com</a>
+            </div>
+          </div>
+        </div>
+        <div className="footer-widget-wrapper-box">
+          <div className="footer-widget-wrapper">
+            <div className="footer-widget-box newsletter" style={{minWidth:'280px'}}>
+              <form action="#" className="subscribe-form">
+                <div className="input-field">
+                  <input
+                    type="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}  
+                    placeholder="Enter your email"
+                  />
+                  <button
+                    onClick={handleSubscribe}
+                    type="submit"
+                    className="subscribe-btn"
+                  >
+                    <Image src={icon} alt="icon" />
+                  </button>
+                </div>
+              </form>
+              <div className="subscription-text">
+                <div className="text-wrapper">
+                  <p className="text">
+                    By subscribing you agree with our{" "}
+                    <Link href="/privacy-policy">Privacy Policy</Link>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="footer-widget-box">
+              <h2 className="title">Suncube</h2>
+              <ul className="footer-nav-list">
+                {["About", "Sustainability", "Partners", "Contact"].map(
+                  (item) => (
+                    <li key={item}>
+                      <Link href="/contact-suncube">{item}</Link>
+                    </li>
+                  )
+                )}
+              </ul>
+            </div>
+
+            <div className="footer-widget-box">
+              <h2 className="title">Solutions</h2>
+              <ul className="footer-nav-list">
+                {[
+                  "Residential Solar + AI",
+                  "Smart Grid & Virtual Power Plant",
+                  "AI Monitoring & Predictive Maintenance",
+                  "Data Insights & Weather Forecasting",
+                ].map((item) => (
+                  <li key={item}>
+                    <Link href="/contact-suncube">{item}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="footer-widget-box">
+              <h2 className="title">Resources</h2>
+              <ul className="footer-nav-list">
+                {["Case Studies", "Blog", "Our Commitment", "Transparency"].map((item) => (
+                  <li key={item}>
+                    <Link href="/contact-suncube">{item}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="copyright-area">
+        <div className="copyright-area-inner">
+          <div className="copyright-text">
+            <p className="text">
+              © {new Date().getFullYear()}{" "}
+              <a href="https://solarsystem.com">Suncube AI</a>. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
