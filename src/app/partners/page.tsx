@@ -51,6 +51,37 @@ export default function HomeCreativeAgencyPage() {
       img: "/assets/imgs/solutions/img3.png",
     },
   ];
+  const impactStories = [
+    {
+      text: `“In large rooftop installations, Suncube’s AI detected subtle inverter irregularities hours before visible failure. Installers reported drastically fewer on-site breakdowns as predictive alerts and automated ticket routing kept systems stable without emergency visits.”`,
+      name: "Suncube × Installers",
+      post: "AI-Driven Reliability Story",
+      icon: "/assets/imgs/icon/icon-3.webp",
+      light: false,
+    },
+    {
+      text: `“Energy consultants adopted Suncube’s blockchain-secured logs to create fully traceable audit trails. Reports that once required manual verification were now automated, immutable, and compliance-ready—streamlining sustainability assessments across commercial portfolios.”`,
+      name: "Suncube × Consultants",
+      post: "Blockchain Compliance Story",
+      icon: "/assets/imgs/icon/icon-3-light.webp",
+      light: true,
+    },
+    {
+      text: `“EPC teams leveraged Suncube’s predictive maintenance engine to understand failure patterns before dispatching technicians. Field service frequency dropped significantly as AI flagged dust accumulation, voltage drops, and panel faults well in advance.”`,
+      name: "Suncube × EPC Companies",
+      post: "Predictive Maintenance Story",
+      icon: "/assets/imgs/icon/icon-3.webp",
+      light: false,
+    },
+    {
+      text: `“System integrators embedded Suncube’s APIs into smart-building dashboards to merge solar production, inverter health, and load-balancing data. Real-time insights powered automated energy routing inside BMS platforms without rewriting existing infrastructure.”`,
+      name: "Suncube × Integrators",
+      post: "API Integration Story",
+      icon: "/assets/imgs/icon/icon-3.webp",
+      light: false,
+    },
+  ];
+
   return (
     <>
       <CustomCursor />
@@ -136,53 +167,53 @@ export default function HomeCreativeAgencyPage() {
                 subtitle="Partners"
                 title="Choose the Path That Fits Your Business"
               />
-
               <ServiceAreaFour
                 services={[
                   {
                     number: "01",
                     title: "Integration Partner",
                     features: [
-                      "Full access to APIs and SDK toolkits",
-                      "Co-development support with Suncube",
-                      "Embed AI logic into apps or hardware",
-                      "Joint deployments for enterprise clients",
+                      "Integrate Suncube APIs into platforms",
+                      "Enable load balancing and grid sync",
+                      "Embed real-time inverter intelligence",
+                      "Co-develop enterprise automation solutions",
                     ],
                   },
                   {
                     number: "02",
                     title: "Commercial / Channel Partner",
                     features: [
-                      "Sell Suncube AI in your local markets",
-                      "White-label product and branding options",
-                      "End-to-end sales enablement support",
-                      "Marketing kits for campaigns and demos",
+                      "Bundle hardware with Suncube intelligence",
+                      "Offer monitoring apps to customers",
+                      "Add predictive maintenance service value",
+                      "Use ready sales enablement kits",
                     ],
                   },
                   {
                     number: "03",
                     title: "Consulting & Analytics Partner",
                     features: [
-                      "ESG-ready sustainability intelligence",
-                      "CO₂ modelling and impact simulations",
-                      "Blockchain-secure reporting outputs",
-                      "Analytics toolkit for client assessments",
+                      "Deliver analytics for client reporting",
+                      "Use blockchain-secure audit records",
+                      "Provide sustainability and CO₂ insights",
+                      "Run performance benchmarking assessments",
                     ],
                   },
                   {
                     number: "04",
                     title: "Installation & Service Partner",
                     features: [
-                      "AI-guided predictive maintenance flows",
-                      "Customer monitoring dashboards enabled",
-                      "AMC automation with ticket routing",
-                      "Optional revenue-sharing on services",
+                      "Deploy AI-guided solar installations",
+                      "Reduce failures using predictive maintenance",
+                      "Provide intelligent monitoring dashboards",
+                      "Automate AMC with ticket routing",
                     ],
                   },
                 ]}
               />
 
               <ServiceDetailsApproach
+                steps="04"
                 subtitle="Advantage"
                 heading="Deep Technology That Moves Markets And Empowers Solar Partnerships"
                 approachItems={[
@@ -265,44 +296,9 @@ export default function HomeCreativeAgencyPage() {
                 serviceDetailsLink="/service-details"
               />
 
-              <ServiceAreaThree
-                title={
-                  <>
-                    Simple, Transparent <br />
-                    Scalable Partnerships.
-                  </>
-                }
-                description="A clear, compliance-ready process that gets partners integrated fast."
-                services={[
-                  {
-                    img: "/assets/imgs/partners/apply.jpg",
-                    title: "Apply",
-                    text: "Submit your partner application and share your capabilities.",
-                    delay: "0.45",
-                  },
-                  {
-                    img: "/assets/imgs/partners/evaluate.jpg",
-                    title: "Evaluate",
-                    text: "Our team reviews alignment, technical fit, and partnership potential.",
-                    delay: "0.60",
-                  },
-                  {
-                    img: "/assets/imgs/partners/onboard.jpg",
-                    title: "Onboard",
-                    text: "Receive training, certification access, and secure API credentials.",
-                    delay: "0.75",
-                  },
-                  {
-                    img: "/assets/imgs/partners/launch.jpg",
-                    title: "Launch",
-                    text: "Begin deploying intelligent Suncube-powered solutions to your clients.",
-                    delay: "0.90",
-                  },
-                ]}
-              />
               <ServiceAreaSix
-                subtitle="Partners"
-                title="Choose the Path That Fits Your Business"
+                subtitle="Partnership Models"
+                title="A Strategic Pathway for Every Solar Business"
               />
 
               <ServiceAreaFour
@@ -311,48 +307,86 @@ export default function HomeCreativeAgencyPage() {
                     number: "01",
                     title: "Integration Partner",
                     features: [
-                      "Full access to APIs and SDK toolkits",
-                      "Co-development support with Suncube",
-                      "Embed AI logic into apps or hardware",
-                      "Joint deployments for enterprise clients",
+                      "Full access to APIs and SDK ecosystems",
+                      "Collaborative co-development for advanced solutions",
+                      "Embed AI intelligence into software or hardware",
+                      "Execute joint enterprise-scale deployments",
                     ],
                   },
                   {
                     number: "02",
                     title: "Commercial / Channel Partner",
                     features: [
-                      "Sell Suncube AI in your local markets",
-                      "White-label product and branding options",
-                      "End-to-end sales enablement support",
-                      "Marketing kits for campaigns and demos",
+                      "Resell Suncube AI across local markets",
+                      "Offer full white-label branding configurations",
+                      "Access end-to-end sales enablement programs",
+                      "Utilize premium marketing kits and demos",
                     ],
                   },
                   {
                     number: "03",
                     title: "Consulting & Analytics Partner",
                     features: [
-                      "ESG-ready sustainability intelligence",
-                      "CO₂ modelling and impact simulations",
-                      "Blockchain-secure reporting outputs",
-                      "Analytics toolkit for client assessments",
+                      "Leverage ESG-ready sustainability intelligence",
+                      "Use CO₂ modelling and impact simulations",
+                      "Deliver blockchain-secured audit-grade reports",
+                      "Access advanced analytics for client assessments",
                     ],
                   },
                   {
                     number: "04",
                     title: "Installation & Service Partner",
                     features: [
-                      "AI-guided predictive maintenance flows",
-                      "Customer monitoring dashboards enabled",
-                      "AMC automation with ticket routing",
-                      "Optional revenue-sharing on services",
+                      "Deploy AI-driven predictive maintenance flows",
+                      "Enable customer monitoring through live dashboards",
+                      "Automate AMC with smart ticket routing",
+                      "Offer optional revenue-sharing on services",
                     ],
                   },
                 ]}
               />
 
-              <TestimonialArea />
-              <ServiceAreaFour />
-              <CtaAreaFour line1="Let's modernize" line2="your energy ops" />
+              <TestimonialArea
+                testimonials={impactStories}
+                title="Where Suncube Technology Meets Industry Outcomes"
+              />
+
+              <ServiceAreaThree
+                title={
+                  <>
+                    Building the World’s <br />
+                    Smartest Solar Network.
+                  </>
+                }
+                description="A unified vision powered by distributed AI, transparent energy flows, and climate-positive innovation."
+                services={[
+                  {
+                    img: "/assets/imgs/partners/apply.jpg",
+                    title: "Distributed AI Intelligence",
+                    text: "A global network of systems continuously learning from solar data to optimize performance everywhere.",
+                    delay: "0.45",
+                  },
+                  {
+                    img: "/assets/imgs/partners/evaluate.jpg",
+                    title: "Zero-Downtime Ecosystems",
+                    text: "Predictive maintenance, real-time anomaly detection, and automated workflows that keep solar running reliably.",
+                    delay: "0.60",
+                  },
+                  {
+                    img: "/assets/imgs/partners/onboard.jpg",
+                    title: "Transparent Energy Markets",
+                    text: "Blockchain-secured logs build trust across regions, enabling clean, verifiable, and intelligent energy exchange.",
+                    delay: "0.75",
+                  },
+                  {
+                    img: "/assets/imgs/partners/launch.jpg",
+                    title: "Climate-Positive Innovation",
+                    text: "AI-driven sustainability metrics and CO₂ insights empower global partners to accelerate environmental impact.",
+                    delay: "0.90",
+                  },
+                ]}
+              />
+              <CtaAreaFour line1="Accelerate your" line2="solar advantage" />
               <Footer />
             </main>
           </div>
