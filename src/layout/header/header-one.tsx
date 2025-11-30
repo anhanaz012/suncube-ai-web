@@ -8,7 +8,6 @@ import SideToggle from "@/components/common/side-toggle";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
   return (
     <>
       <header className="header-area">
