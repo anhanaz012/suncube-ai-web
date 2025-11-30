@@ -9,8 +9,7 @@ export default function AboutTwo() {
             <div className="section-title-wrapper">
               <div className="title-wrapper">
                 <h2 className="section-title font-sequelsans-romanbody rr_title_anim">
-                  Creating virtual emotion in the universe, for the largest
-                  brands & market since
+                  Real Outcomes Delivered Across Every Solar Segment
                 </h2>
               </div>
             </div>
@@ -19,25 +18,28 @@ export default function AboutTwo() {
             <div className="year-wrapper">
               <h2 className="year-since">
                 <span className="is-fading">
-                  <span className="first-text">2017</span> - 2025
+                  <span className="first-text">Solar</span> - Made
                 </span>
-                <span className="last-text">Work</span>
+                <span className="last-text">Better</span>
               </h2>
             </div>
             <div className="text-wrapper">
               <p className="text">
-                We help brands and people be part of the solution. As a
-                cause-led branding and communications agency, we harness the
-                power of technology and creativity to drive positive changes.
-                Whether your inquiries are big or small, {"we're"} prepared to
-                engage, focusing on complex problems
+                These featured deployments showcase how Suncube AI improves
+                performance across real-world solar sites. From residential
+                homes using AI monitoring and predictive maintenance, to
+                commercial facilities reducing downtime with automated
+                diagnostics, to industrial operators using blockchain-secure
+                records and dynamic grid control—each case demonstrates higher
+                uptime, cleaner output, and measurable financial and
+                sustainability gains.
               </p>
             </div>
             <div className="btn-wrapper">
               <Link href="/about" className="rr-btn">
                 <span className="btn-wrap">
-                  <span className="text-one">Learn More</span>
-                  <span className="text-two">Learn More</span>
+                  <span className="text-one">View All Case Studies</span>
+                  <span className="text-two">View All Case Studies</span>
                 </span>
               </Link>
             </div>
@@ -47,6 +49,3 @@ export default function AboutTwo() {
     </section>
   );
 }
-
-
-

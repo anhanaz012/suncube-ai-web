@@ -18,7 +18,7 @@ export default function ContactArea() {
               </div>
               <div className="title-wrapper">
                 <h2 className="section-title font-sequelsans-romanbody">
-                  Let’s drop us a line and get the project started.
+                  Let’s drop us a message and we’ll get back to you.
                 </h2>
               </div>
             </div>

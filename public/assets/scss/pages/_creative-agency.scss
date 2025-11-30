@@ -11,8 +11,7 @@
         .rr-btn {
 
             &::before {
-                background-color: purple ;
-                // background-color: var(--black);
+                background-color: var(--black);
             }
 
             &.btn-border-white {

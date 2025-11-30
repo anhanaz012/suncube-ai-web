@@ -47,6 +47,6 @@ const menuData: MenuItem[] = [
   { title: "Case Studies", href: "/case-studies" },
   { title: "Sustaintability", href: "/sustainability" },
   { title: "Partners", href: "/partners" },
-  { title: "Contact", href: "/contact-suncube-ai" },
+  { title: "Contact", href: "/contact" },
 ];
 export default menuData;
